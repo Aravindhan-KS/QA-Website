@@ -2,133 +2,233 @@ import React from 'react';
 import MemberCard from '../components/MemberCard';
 
 const Team = () => {
-  // Mock team members data
-  const teamMembers = [
+  // Team members organized by hierarchy
+  const heads = [
     {
       id: 1,
-      name: "Arjun Krishnamurthy",
+      name: "Jaison Jecinth Vincent",
       photo: "/api/placeholder/300/300",
       designation: "President",
-      year: "4th Year",
-      department: "Computer Science Engineering",
-      instagram: "https://instagram.com/arjunk",
-      linkedin: "https://linkedin.com/in/arjunk"
+      year: "3rd Year",
+      department: "Computer Science Engineering"
     },
     {
       id: 2,
-      name: "Priya Rajesh",
+      name: "Visvam Srinivasan",
       photo: "/api/placeholder/300/300",
       designation: "Vice President",
       year: "3rd Year",
-      department: "Electronics & Communication Engineering",
-      instagram: "https://instagram.com/priyar",
-      linkedin: "https://linkedin.com/in/priyar"
+      department: "Computer Science Engineering"
     },
     {
       id: 3,
-      name: "Vikram Suresh",
+      name: "Mikul Ramesh",
       photo: "/api/placeholder/300/300",
-      designation: "Secretary",
-      year: "3rd Year",
+      designation: "Co-Heads of Curation",
+      year: "4th Year",
       department: "Mechanical Engineering",
-      instagram: "https://instagram.com/vikrams",
-      linkedin: "https://linkedin.com/in/vikrams"
     },
     {
       id: 4,
-      name: "Divya Menon",
+      name: "Akash P S",
       photo: "/api/placeholder/300/300",
-      designation: "Treasurer",
-      year: "2nd Year",
-      department: "Civil Engineering",
-      instagram: "https://instagram.com/divyam",
-      linkedin: "https://linkedin.com/in/divyam"
+      designation: "Co-Heads of Curation",
+      year: "4th Year",
+      department: "Mechanical Engineering",
     },
     {
       id: 5,
-      name: "Rahul Sharma",
+      name: "Girish Sai D",
       photo: "/api/placeholder/300/300",
-      designation: "Quiz Master",
+      designation: "Co-Heads of Curation",
       year: "4th Year",
-      department: "Information Technology",
-      instagram: "https://instagram.com/rahuls",
-      linkedin: "https://linkedin.com/in/rahuls"
+      department: "Information technology",
     },
-    {
+     {
       id: 6,
-      name: "Sneha Patel",
+      name: "Manoranjan U",
       photo: "/api/placeholder/300/300",
-      designation: "Content Head",
+      designation: "Head of Operations",
       year: "3rd Year",
-      department: "Biomedical Engineering",
-      instagram: "https://instagram.com/snehap",
-      linkedin: "https://linkedin.com/in/snehap"
+      department: "Electronics & Communication Engineering",
     },
-    {
+     {
       id: 7,
-      name: "Karthik Raman",
+      name: "Sasi Kiran L",
       photo: "/api/placeholder/300/300",
-      designation: "Events Coordinator",
-      year: "2nd Year",
-      department: "Electrical & Electronics Engineering",
-      instagram: "https://instagram.com/karthikr",
-      linkedin: "https://linkedin.com/in/karthikr"
-    },
-    {
-      id: 8,
-      name: "Aishwarya Nair",
-      photo: "/api/placeholder/300/300",
-      designation: "Design Head",
-      year: "2nd Year",
-      department: "Architecture",
-      instagram: "https://instagram.com/aishwaryan",
-      linkedin: "https://linkedin.com/in/aishwaryan"
-    },
-    {
-      id: 9,
-      name: "Adithya Venkat",
-      photo: "/api/placeholder/300/300",
-      designation: "Technical Lead",
+      designation: "Co-Heads of Marketing",
       year: "3rd Year",
       department: "Computer Science Engineering",
-      instagram: "https://instagram.com/adithyav",
-      linkedin: "https://linkedin.com/in/adithyav"
     },
-    {
-      id: 10,
-      name: "Meera Krishnan",
+     {
+      id: 8,
+      name: "Shushmita K",
       photo: "/api/placeholder/300/300",
-      designation: "Social Media Manager",
-      year: "1st Year",
-      department: "Chemical Engineering",
-      instagram: "https://instagram.com/meerak",
-      linkedin: "https://linkedin.com/in/meerak"
+      designation: "Co-Heads of Marketing",
+      year: "3rd Year",
+      department: "Biomedical Engineering",
     },
+     {
+      id: 9,
+      name: "Mohamed Jasim J",
+      photo: "/api/placeholder/300/300",
+      designation: "Head of Contents",
+      year: "3rd Year",
+      department: "Computer Science Engineering",
+    },
+     {
+      id: 10,
+      name: "Sudarshan V",
+      photo: "/api/placeholder/300/300",
+      designation: "Head of Design",
+      year: "3rd Year",
+      department: "Electronics & Communication Engineering",
+    },
+  ];
+
+  const seniorCoordinators = [
     {
       id: 11,
-      name: "Rohan Das",
+      name: "Abhishek S",
       photo: "/api/placeholder/300/300",
-      designation: "Research Coordinator",
-      year: "2nd Year",
-      department: "Metallurgical Engineering",
-      instagram: "https://instagram.com/rohand",
-      linkedin: "https://linkedin.com/in/rohand"
+      designation: "Operations",
+      year: "3rd Year",
+      department: "Computer Science Engineering",
     },
     {
       id: 12,
-      name: "Kavya Subramanian",
+      name: "Manesh Ram",
       photo: "/api/placeholder/300/300",
-      designation: "Public Relations",
-      year: "1st Year",
-      department: "Textile Technology",
-      instagram: "https://instagram.com/kavyas",
-      linkedin: "https://linkedin.com/in/kavyas"
+      designation: "Operations",
+      year: "3rd Year",
+      department: "Computer Science Engineering",
+    },
+    {
+      id: 13,
+      name: "Ragotma",
+      photo: "/api/placeholder/300/300",
+      designation: "Operations",
+      year: "3rd Year",
+      department: "Computer Science Engineering",
+    },
+    {
+      id: 14,
+      name: "Samyuktha Venkatasamy",
+      photo: "/api/placeholder/300/300",
+      designation: "Operations",
+      year: "3rd Year",
+      department: "Industrial Engineering",
+    },
+    {
+      id: 15,
+      name: "Jeffrey Samuel Raj P",
+      photo: "/api/placeholder/300/300",
+      designation: "Marketing",
+      year: "3rd Year",
+      department: "Electronics & Communication Engineering",
+    },
+    {
+      id: 16,
+      name: "Parthasarathi N S",
+      photo: "/api/placeholder/300/300",
+      designation: "Contents",
+      year: "2nd Year",
+      department: "Medical Physics",
+    },
+    {
+      id: 17,
+      name: "Suvi Sharon",
+      photo: "/api/placeholder/300/300",
+      designation: "Contents",
+      year: "3rd Year",
+      department: "Computer Science Engineering",
+    },
+    {
+      id: 18,
+      name: "Nagarajan S",
+      photo: "/api/placeholder/300/300",
+      designation: "Design",
+      year: "3rd Year",
+      department: "Mechanical Engineering",
+    },
+    {
+      id: 19,
+      name: "Roshon R",
+      photo: "/api/placeholder/300/300",
+      designation: "Design",
+      year: "3rd Year",
+      department: "Biomedical Engineering",
+    },
+    {
+      id: 20,
+      name: "A Mohammed Saalih",
+      photo: "/api/placeholder/300/300",
+      designation: "Design",
+      year: "3rd Year",
+      department: "Computer Science Engineering",
+    },
+    {
+      id: 21,
+      name: "Aravindhan S",
+      photo: "/api/placeholder/300/300",
+      designation: "Technical Support",
+      year: "3rd Year",
+      department: "Computer Science Engineering",
+    },
+  ];
+
+  const juniorCoordinators = [
+    {
+      id: 22,
+      name: "Arunprasath M",
+      photo: "/api/placeholder/300/300",
+      designation: "Operations",
+      year: "2nd Year",
+      department: "Mechanical Engineering",
+    },
+    {
+      id: 23,
+      name: "Srivishnu Rajkrishna",
+      photo: "/api/placeholder/300/300",
+      designation: "Marketing",
+      year: "2nd Year",
+      department: "Computer Science Engineering",
+    },
+    {
+      id: 24,
+      name: "Sachin C K S",
+      photo: "/api/placeholder/300/300",
+      designation: "Contents",
+      year: "2nd Year",
+      department: "Mechanical Engineering",
+    },
+    {
+      id: 25,
+      name: "Kaviya",
+      photo: "/api/placeholder/300/300",
+      designation: "Design",
+      year: "2nd Year",
+      department: "Computer Science Engineering",
+    },
+    {
+      id: 26,
+      name: "Ramkumar R",
+      photo: "/api/placeholder/300/300",
+      designation: "Design",
+      year: "2nd Year",
+      department: "Mechanical Engineering",
+    },
+    {
+      id: 27,
+      name: "Sujitha",
+      photo: "/api/placeholder/300/300",
+      designation: "Design",
+      year: "2nd Year",
+      department: "Electrical & Communication Engineering",
     }
   ];
 
-  // Separate core team (first 4 members) from other members
-  const coreTeam = teamMembers.slice(0, 4);
-  const otherMembers = teamMembers.slice(4);
+  const allMembers = [...heads, ...seniorCoordinators, ...juniorCoordinators];
 
   return (
     <div className="min-h-screen bg-dark-bg py-8">
@@ -142,29 +242,52 @@ const Team = () => {
           </p>
         </div>
 
-        {/* Core Team Section */}
+        {/* Heads Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-dark-text mb-4">Core Team</h2>
+            <h2 className="text-3xl font-bold text-dark-text mb-4">Heads</h2>
             <div className="w-24 h-1 bg-accent-yellow mx-auto"></div>
+            <p className="text-dark-text-secondary mt-4 max-w-2xl mx-auto">
+              The leadership team that guides our vision and strategic direction
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {coreTeam.map((member) => (
+            {heads.map((member) => (
               <MemberCard key={member.id} member={member} />
             ))}
           </div>
         </div>
 
-        {/* Team Members Section */}
+        {/* Senior Coordinators Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-dark-text mb-4">Team Members</h2>
+            <h2 className="text-3xl font-bold text-dark-text mb-4">Senior Coordinators</h2>
             <div className="w-24 h-1 bg-accent-blue mx-auto"></div>
+            <p className="text-dark-text-secondary mt-4 max-w-2xl mx-auto">
+              Experienced members who manage specialized areas and mentor junior coordinators
+            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {otherMembers.map((member) => (
+            {seniorCoordinators.map((member) => (
+              <MemberCard key={member.id} member={member} />
+            ))}
+          </div>
+        </div>
+
+        {/* Junior Coordinators Section */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-dark-text mb-4">Junior Coordinators</h2>
+            <div className="w-24 h-1 bg-accent-green mx-auto"></div>
+            <p className="text-dark-text-secondary mt-4 max-w-2xl mx-auto">
+              Our enthusiastic newer members who bring fresh ideas and energy to the team
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {juniorCoordinators.map((member) => (
               <MemberCard key={member.id} member={member} />
             ))}
           </div>
@@ -173,20 +296,20 @@ const Team = () => {
         {/* Team Stats */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
           <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
-            <div className="text-3xl font-bold text-purple-400 mb-2">{teamMembers.length}</div>
-            <div className="text-dark-text-secondary">Team Members</div>
+            <div className="text-3xl font-bold text-accent-yellow mb-2">{heads.length}</div>
+            <div className="text-dark-text-secondary">Heads</div>
           </div>
           <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
-            <div className="text-3xl font-bold text-accent-blue mb-2">8</div>
-            <div className="text-dark-text-secondary">Departments</div>
+            <div className="text-3xl font-bold text-accent-blue mb-2">{seniorCoordinators.length}</div>
+            <div className="text-dark-text-secondary">Senior Coordinators</div>
           </div>
           <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
-            <div className="text-3xl font-bold text-accent-green mb-2">4</div>
-            <div className="text-dark-text-secondary">Academic Years</div>
+            <div className="text-3xl font-bold text-accent-green mb-2">{juniorCoordinators.length}</div>
+            <div className="text-dark-text-secondary">Junior Coordinators</div>
           </div>
           <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
-            <div className="text-3xl font-bold text-orange-400 mb-2">50+</div>
-            <div className="text-dark-text-secondary">Events Organized</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">{allMembers.length}</div>
+            <div className="text-dark-text-secondary">Total Members</div>
           </div>
         </div>
 
@@ -205,7 +328,7 @@ const Team = () => {
               Get in Touch
             </a>
             <a 
-              href="https://instagram.com/quizzersanonymous"
+              href="https://www.instagram.com/cegquizclub"
               target="_blank"
               rel="noopener noreferrer"
               className="border-2 border-accent-cyan text-accent-cyan px-8 py-3 rounded-lg font-semibold hover:bg-accent-cyan hover:text-black transition-colors duration-200"

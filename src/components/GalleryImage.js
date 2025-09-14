@@ -4,10 +4,7 @@ const GalleryImage = ({ image, onClick }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    <div 
-      className="relative group cursor-pointer overflow-hidden rounded-lg bg-gray-200"
-      onClick={() => onClick(image)}
-    >
+    <div className="relative group cursor-pointer overflow-hidden rounded-lg bg-gray-200" onClick={() => onClick(image)}>
       <img
         src={image.src || '/api/placeholder/400/300'}
         alt={image.caption}

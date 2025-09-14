@@ -51,7 +51,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-dark-text">Office Location</h3>
-                  <p className="text-dark-text-secondary">Room No. 11, Third Floor</p>
+                  <p className="text-dark-text-secondary">Room No. 11, Third Floor, CEG Square</p>
                   <p className="text-dark-text-secondary">College of Engineering Guindy</p>
                   <p className="text-dark-text-secondary">Anna University, Chennai - 600025</p>
                 </div>
@@ -67,10 +67,10 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-dark-text">Email</h3>
                   <a 
-                    href="mailto:quizzersanonymous@gmail.com" 
+                    href="mailto:quizzersanonymousceg@gmail.com" 
                     className="text-accent-blue hover:text-blue-400 transition-colors"
                   >
-                    quizzersanonymous@gmail.com
+                    quizzersanonymousceg@gmail.com
                   </a>
                 </div>
               </div>
@@ -87,14 +87,14 @@ const Contact = () => {
                   <div className="space-y-1">
                     <div>
                       <span className="text-dark-text-secondary">President: </span>
-                      <a href="tel:+919876543210" className="text-accent-blue hover:text-blue-400 transition-colors">
-                        +91 98765 43210
+                      <a href="tel:+919025601119" className="text-accent-blue hover:text-blue-400 transition-colors">
+                        +91 90256 01119
                       </a>
                     </div>
                     <div>
                       <span className="text-dark-text-secondary">Vice President: </span>
-                      <a href="tel:+919876543211" className="text-accent-blue hover:text-blue-400 transition-colors">
-                        +91 98765 43211
+                      <a href="tel:+916385050355" className="text-accent-blue hover:text-blue-400 transition-colors">
+                        +91 63850 50355
                       </a>
                     </div>
                   </div>

@@ -21,17 +21,19 @@ const Navbar = () => {
     <nav className="bg-dark-surface bg-opacity-95 backdrop-blur-sm shadow-lg border-b border-dark-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center">
+        {/* Logo */}
+        <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-accent-blue rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">QA</span>
-              </div>
-              <span className="font-bold text-xl text-dark-text">Quizzers Anonymous</span>
+                <img
+                    src="/logo.png"
+                    alt="Quizzers Anonymous Logo"
+                    className="w-8 h-8 rounded-full object-cover"
+                />
+                <span className="font-bold text-xl text-dark-text">Quizzers Anonymous</span>
             </Link>
-          </div>
+        </div>
 
-          {/* Desktop Navigation */}
+        {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link

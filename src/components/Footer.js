@@ -18,7 +18,7 @@ const Footer = () => {
               Join us for exciting quiz competitions, knowledge sharing, and intellectual discussions.
             </p>
             <div className="space-y-2">
-              <p className="text-sm text-dark-text-secondary">Room No. 11, Third Floor</p>
+              <p className="text-sm text-dark-text-secondary">Room No. 11, Third Floor, CEG Square</p>
               <p className="text-sm text-dark-text-secondary">College of Engineering Guindy</p>
               <p className="text-sm text-dark-text-secondary">Anna University, Chennai</p>
             </div>
@@ -41,7 +41,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-dark-text">Follow Us</h3>
             <div className="space-y-3">
               <a 
-                href="mailto:quizzersanonymous@gmail.com" 
+                href="mailto:quizzersanonymousceg@gmail.com" 
                 className="flex items-center space-x-2 text-dark-text-secondary hover:text-accent-blue transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -52,7 +52,7 @@ const Footer = () => {
               </a>
               
               <a 
-                href="https://instagram.com/quizzersanonymous" 
+                href="https://www.instagram.com/cegquizclub" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-dark-text-secondary hover:text-accent-blue transition-colors"
