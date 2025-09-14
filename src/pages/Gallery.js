@@ -111,12 +111,12 @@ const Gallery = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-dark-bg py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Gallery</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h1 className="text-4xl font-bold text-dark-text mb-4">Gallery</h1>
+          <p className="text-xl text-dark-text-secondary max-w-3xl mx-auto">
             Relive the memorable moments from our quiz competitions, team activities, and workshops. 
             Each photo tells a story of knowledge, friendship, and intellectual growth.
           </p>
@@ -130,8 +130,8 @@ const Gallery = () => {
               onClick={() => setFilter(category.id)}
               className={`px-6 py-3 rounded-lg font-medium transition-colors duration-200 ${
                 filter === category.id
-                  ? 'bg-gray-900 text-white'
-                  : 'bg-white text-gray-700 hover:bg-gray-100'
+                  ? 'bg-accent-blue text-white'
+                  : 'bg-dark-card text-dark-text border border-dark-border hover:bg-dark-hover'
               }`}
             >
               {category.name} ({category.count})
@@ -204,31 +204,31 @@ const Gallery = () => {
 
         {/* Stats Section */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-2">{images.length}</div>
-            <div className="text-gray-600">Total Photos</div>
+          <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
+            <div className="text-3xl font-bold text-accent-blue mb-2">{images.length}</div>
+            <div className="text-dark-text-secondary">Total Photos</div>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-3xl font-bold text-green-600 mb-2">15+</div>
-            <div className="text-gray-600">Events Documented</div>
+          <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
+            <div className="text-3xl font-bold text-accent-green mb-2">15+</div>
+            <div className="text-dark-text-secondary">Events Documented</div>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-3xl font-bold text-purple-600 mb-2">3</div>
-            <div className="text-gray-600">Years of Memories</div>
+          <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
+            <div className="text-3xl font-bold text-purple-400 mb-2">3</div>
+            <div className="text-dark-text-secondary">Years of Memories</div>
           </div>
         </div>
 
         {/* Upload Section */}
         <div className="mt-16">
-          <div className="bg-white rounded-lg shadow-md p-8 max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Share Your Moments</h2>
-            <p className="text-gray-600 mb-6">
+          <div className="bg-dark-card rounded-lg border border-dark-border p-8 max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-dark-text mb-4">Share Your Moments</h2>
+            <p className="text-dark-text-secondary mb-6">
               Have photos from our events that you'd like to share? We'd love to feature them in our gallery! 
               Send us your best shots and become part of our visual story.
             </p>
             <a 
               href="mailto:quizzersanonymous@gmail.com?subject=Gallery%20Submission"
-              className="inline-flex items-center space-x-2 bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-200"
+              className="inline-flex items-center space-x-2 bg-accent-cyan text-black px-6 py-3 rounded-lg hover:bg-cyan-400 transition-colors duration-200"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />

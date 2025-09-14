@@ -18,16 +18,16 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-white bg-opacity-90 backdrop-blur-sm shadow-lg sticky top-0 z-50">
+    <nav className="bg-dark-surface bg-opacity-95 backdrop-blur-sm shadow-lg border-b border-dark-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center">
+              <div className="w-8 h-8 bg-accent-blue rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-sm">QA</span>
               </div>
-              <span className="font-bold text-xl text-gray-800">Quizzers Anonymous</span>
+              <span className="font-bold text-xl text-dark-text">Quizzers Anonymous</span>
             </Link>
           </div>
 
@@ -39,8 +39,8 @@ const Navbar = () => {
                 to={item.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                   isActive(item.path)
-                    ? 'text-gray-900 bg-gray-100'
-                    : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                    ? 'text-accent-blue bg-dark-hover'
+                    : 'text-dark-text-secondary hover:text-accent-blue hover:bg-dark-hover'
                 }`}
               >
                 {item.name}
@@ -52,7 +52,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+              className="text-dark-text-secondary hover:text-accent-blue focus:outline-none focus:text-accent-blue"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
@@ -68,7 +68,7 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white bg-opacity-95 backdrop-blur-sm rounded-lg mt-2">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-dark-card bg-opacity-98 backdrop-blur-sm rounded-lg mt-2 border border-dark-border">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
@@ -76,8 +76,8 @@ const Navbar = () => {
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                     isActive(item.path)
-                      ? 'text-gray-900 bg-gray-100'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
+                      ? 'text-accent-blue bg-dark-hover'
+                      : 'text-dark-text-secondary hover:text-accent-blue hover:bg-dark-hover'
                   }`}
                 >
                   {item.name}

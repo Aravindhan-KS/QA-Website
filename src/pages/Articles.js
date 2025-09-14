@@ -67,14 +67,14 @@ const Articles = () => {
 
   const getCategoryColor = (category) => {
     const colors = {
-      'Culture': 'bg-purple-100 text-purple-800',
-      'Tips & Tricks': 'bg-blue-100 text-blue-800',
-      'Technology': 'bg-green-100 text-green-800',
-      'Education': 'bg-orange-100 text-orange-800',
-      'Personalities': 'bg-pink-100 text-pink-800',
-      'Self-Improvement': 'bg-teal-100 text-teal-800'
+      'Culture': 'bg-purple-900 text-purple-200',
+      'Tips & Tricks': 'bg-blue-900 text-blue-200',
+      'Technology': 'bg-green-900 text-green-200',
+      'Education': 'bg-orange-900 text-orange-200',
+      'Personalities': 'bg-pink-900 text-pink-200',
+      'Self-Improvement': 'bg-teal-900 text-teal-200'
     };
-    return colors[category] || 'bg-gray-100 text-gray-800';
+    return colors[category] || 'bg-gray-700 text-gray-200';
   };
 
   const formatDate = (dateString) => {
@@ -83,12 +83,12 @@ const Articles = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-dark-bg py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Articles</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h1 className="text-4xl font-bold text-dark-text mb-4">Articles</h1>
+          <p className="text-xl text-dark-text-secondary max-w-3xl mx-auto">
             Dive deep into the world of knowledge with our insightful articles. 
             From quiz strategies to educational insights, discover content that enhances your learning journey.
           </p>
@@ -96,7 +96,7 @@ const Articles = () => {
 
         {/* Featured Article */}
         <div className="mb-12">
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-dark-card rounded-lg border border-dark-border overflow-hidden">
             <div className="md:flex">
               <div className="md:w-1/2">
                 <img
@@ -107,37 +107,37 @@ const Articles = () => {
               </div>
               <div className="md:w-1/2 p-8">
                 <div className="flex items-center mb-4">
-                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${getCategoryColor(articles[0].category)}`}>
+                  <span className="px-3 py-1 rounded-full text-sm font-medium bg-accent-cyan text-black">
                     Featured
                   </span>
                   <span className={`ml-2 px-3 py-1 rounded-full text-sm font-medium ${getCategoryColor(articles[0].category)}`}>
                     {articles[0].category}
                   </span>
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">{articles[0].title}</h2>
-                <p className="text-gray-600 mb-6">{articles[0].excerpt}</p>
+                <h2 className="text-3xl font-bold text-dark-text mb-4">{articles[0].title}</h2>
+                <p className="text-dark-text-secondary mb-6">{articles[0].excerpt}</p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    <div className="flex items-center text-sm text-gray-500">
+                    <div className="flex items-center text-sm text-dark-text-secondary">
                       <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                       </svg>
                       {articles[0].author}
                     </div>
-                    <div className="flex items-center text-sm text-gray-500">
+                    <div className="flex items-center text-sm text-dark-text-secondary">
                       <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
                       {formatDate(articles[0].date)}
                     </div>
-                    <div className="flex items-center text-sm text-gray-500">
+                    <div className="flex items-center text-sm text-dark-text-secondary">
                       <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       {articles[0].readTime}
                     </div>
                   </div>
-                  <button className="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors duration-200">
+                  <button className="bg-accent-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-200">
                     Read More
                   </button>
                 </div>
@@ -149,7 +149,7 @@ const Articles = () => {
         {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.slice(1).map((article) => (
-            <article key={article.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <article key={article.id} className="bg-dark-card rounded-lg border border-dark-border overflow-hidden hover:border-accent-blue transition-all duration-300">
               <div className="relative">
                 <img
                   src={article.image}
@@ -164,17 +164,17 @@ const Articles = () => {
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3 line-clamp-2">{article.title}</h3>
-                <p className="text-gray-600 mb-4 line-clamp-3">{article.excerpt}</p>
+                <h3 className="text-xl font-semibold text-dark-text mb-3 line-clamp-2">{article.title}</h3>
+                <p className="text-dark-text-secondary mb-4 line-clamp-3">{article.excerpt}</p>
                 
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center text-sm text-gray-500">
+                  <div className="flex items-center text-sm text-dark-text-secondary">
                     <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
                     {article.author}
                   </div>
-                  <div className="flex items-center text-sm text-gray-500">
+                  <div className="flex items-center text-sm text-dark-text-secondary">
                     <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -183,8 +183,8 @@ const Articles = () => {
                 </div>
                 
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-500">{formatDate(article.date)}</span>
-                  <button className="text-gray-900 font-medium hover:text-gray-700 transition-colors duration-200">
+                  <span className="text-sm text-dark-text-secondary">{formatDate(article.date)}</span>
+                  <button className="text-accent-cyan font-medium hover:text-cyan-400 transition-colors duration-200">
                     Read More →
                   </button>
                 </div>
@@ -195,16 +195,16 @@ const Articles = () => {
 
         {/* Load More Button */}
         <div className="text-center mt-12">
-          <button className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-200">
+          <button className="bg-accent-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-200">
             Load More Articles
           </button>
         </div>
 
         {/* Newsletter Signup */}
         <div className="mt-16">
-          <div className="bg-white rounded-lg shadow-md p-8 max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Stay Informed</h2>
-            <p className="text-gray-600 mb-6">
+          <div className="bg-dark-card rounded-lg border border-dark-border p-8 max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-dark-text mb-4">Stay Informed</h2>
+            <p className="text-dark-text-secondary mb-6">
               Subscribe to our newsletter and get the latest articles, quiz tips, and event updates 
               delivered straight to your inbox.
             </p>
@@ -212,9 +212,9 @@ const Articles = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent"
+                className="flex-1 px-4 py-3 border border-dark-border rounded-lg bg-dark-surface text-dark-text placeholder-dark-text-secondary focus:outline-none focus:ring-2 focus:ring-accent-blue focus:border-transparent"
               />
-              <button className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-200 whitespace-nowrap">
+              <button className="bg-accent-cyan text-black px-6 py-3 rounded-lg hover:bg-cyan-400 transition-colors duration-200 whitespace-nowrap">
                 Subscribe
               </button>
             </div>

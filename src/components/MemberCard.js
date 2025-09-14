@@ -2,7 +2,7 @@ import React from 'react';
 
 const MemberCard = ({ member }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div className="bg-dark-card rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:shadow-dark-hover/50 transition-all duration-300 border border-dark-border">
       <div className="relative">
         <img
           src={member.photo || '/api/placeholder/300/300'}
@@ -12,9 +12,9 @@ const MemberCard = ({ member }) => {
       </div>
       
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
-        <p className="text-gray-600 font-medium mb-2">{member.designation}</p>
-        <p className="text-sm text-gray-500 mb-4">
+        <h3 className="text-xl font-semibold text-dark-text mb-1">{member.name}</h3>
+        <p className="text-accent-blue font-medium mb-2">{member.designation}</p>
+        <p className="text-sm text-dark-text-secondary mb-4">
           {member.year} • {member.department}
         </p>
         

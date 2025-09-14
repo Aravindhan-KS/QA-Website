@@ -131,12 +131,12 @@ const Team = () => {
   const otherMembers = teamMembers.slice(4);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-dark-bg py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Team</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h1 className="text-4xl font-bold text-dark-text mb-4">Our Team</h1>
+          <p className="text-xl text-dark-text-secondary max-w-3xl mx-auto">
             Meet the passionate individuals behind Quizzers Anonymous. Our diverse team brings together 
             students from various departments, united by a shared love for knowledge and learning.
           </p>
@@ -145,8 +145,8 @@ const Team = () => {
         {/* Core Team Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Core Team</h2>
-            <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            <h2 className="text-3xl font-bold text-dark-text mb-4">Core Team</h2>
+            <div className="w-24 h-1 bg-accent-yellow mx-auto"></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -159,8 +159,8 @@ const Team = () => {
         {/* Team Members Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Team Members</h2>
-            <div className="w-24 h-1 bg-blue-400 mx-auto"></div>
+            <h2 className="text-3xl font-bold text-dark-text mb-4">Team Members</h2>
+            <div className="w-24 h-1 bg-accent-blue mx-auto"></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -172,35 +172,35 @@ const Team = () => {
 
         {/* Team Stats */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-3xl font-bold text-purple-600 mb-2">{teamMembers.length}</div>
-            <div className="text-gray-600">Team Members</div>
+          <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
+            <div className="text-3xl font-bold text-purple-400 mb-2">{teamMembers.length}</div>
+            <div className="text-dark-text-secondary">Team Members</div>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-3xl font-bold text-blue-600 mb-2">8</div>
-            <div className="text-gray-600">Departments</div>
+          <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
+            <div className="text-3xl font-bold text-accent-blue mb-2">8</div>
+            <div className="text-dark-text-secondary">Departments</div>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-3xl font-bold text-green-600 mb-2">4</div>
-            <div className="text-gray-600">Academic Years</div>
+          <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
+            <div className="text-3xl font-bold text-accent-green mb-2">4</div>
+            <div className="text-dark-text-secondary">Academic Years</div>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-6 text-center">
-            <div className="text-3xl font-bold text-orange-600 mb-2">50+</div>
-            <div className="text-gray-600">Events Organized</div>
+          <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
+            <div className="text-3xl font-bold text-orange-400 mb-2">50+</div>
+            <div className="text-dark-text-secondary">Events Organized</div>
           </div>
         </div>
 
         {/* Join Us Section */}
-        <div className="bg-gradient-to-r from-gray-900 to-gray-700 rounded-lg shadow-lg p-8 text-center text-white">
-          <h2 className="text-3xl font-bold mb-4">Want to Join Our Team?</h2>
-          <p className="text-xl mb-6 text-gray-200">
+        <div className="bg-gradient-to-r from-dark-surface to-dark-card rounded-lg border border-dark-border p-8 text-center">
+          <h2 className="text-3xl font-bold mb-4 text-dark-text">Want to Join Our Team?</h2>
+          <p className="text-xl mb-6 text-dark-text-secondary">
             We're always looking for passionate individuals who share our love for knowledge and quizzing. 
             Join us and be part of an amazing community!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/contact"
-              className="bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors duration-200"
+              className="bg-accent-yellow text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors duration-200"
             >
               Get in Touch
             </a>
@@ -208,7 +208,7 @@ const Team = () => {
               href="https://instagram.com/quizzersanonymous"
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-200"
+              className="border-2 border-accent-cyan text-accent-cyan px-8 py-3 rounded-lg font-semibold hover:bg-accent-cyan hover:text-black transition-colors duration-200"
             >
               Follow Us
             </a>
@@ -218,37 +218,37 @@ const Team = () => {
         {/* Alumni Section */}
         <div className="mt-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Alumni</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-dark-text mb-4">Our Alumni</h2>
+            <p className="text-dark-text-secondary max-w-2xl mx-auto">
               We're proud of our alumni who have gone on to achieve great things in their careers 
               while maintaining their passion for learning and knowledge sharing.
             </p>
           </div>
           
-          <div className="bg-white rounded-lg shadow-md p-8 text-center">
+          <div className="bg-dark-card rounded-lg border border-dark-border p-8 text-center">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <div className="text-2xl font-bold text-gray-900 mb-2">100+</div>
-                <div className="text-gray-600">Alumni Members</div>
+                <div className="text-2xl font-bold text-dark-text mb-2">100+</div>
+                <div className="text-dark-text-secondary">Alumni Members</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-gray-900 mb-2">25+</div>
-                <div className="text-gray-600">Companies</div>
+                <div className="text-2xl font-bold text-dark-text mb-2">25+</div>
+                <div className="text-dark-text-secondary">Companies</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-gray-900 mb-2">15+</div>
-                <div className="text-gray-600">Countries</div>
+                <div className="text-2xl font-bold text-dark-text mb-2">15+</div>
+                <div className="text-dark-text-secondary">Countries</div>
               </div>
             </div>
             
             <div className="mt-6">
-              <p className="text-gray-600 mb-4">
+              <p className="text-dark-text-secondary mb-4">
                 Our alumni network spans across top companies like Google, Microsoft, Amazon, and many more. 
                 Stay connected with us through our alumni network.
               </p>
               <a 
                 href="mailto:quizzersanonymous@gmail.com?subject=Alumni%20Network"
-                className="inline-flex items-center space-x-2 bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-200"
+                className="inline-flex items-center space-x-2 bg-accent-blue text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-200"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
