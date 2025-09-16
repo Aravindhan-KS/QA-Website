@@ -1,6 +1,5 @@
 import React from 'react';
 import EventCard from '../components/EventCard';
-
 const Events = () => {
   // Mock events data
   const events = [
