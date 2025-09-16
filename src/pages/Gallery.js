@@ -203,7 +203,7 @@ const Gallery = () => {
               Send us your best shots and become part of our visual story.
             </p>
             <a 
-              href="mailto:quizzersanonymous@gmail.com?subject=Gallery%20Submission"
+              href="https://mail.google.com/mail/?view=cm&to=quizzersanonymousceg@gmail.com&su=Gallery%20Submission"
               className="inline-flex items-center space-x-2 bg-accent-cyan text-black px-6 py-3 rounded-lg hover:bg-cyan-400 transition-colors duration-200"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

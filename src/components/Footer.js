@@ -6,15 +6,15 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
-          <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-accent-blue rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">QA</span>
-              </div>
-              <span className="font-bold text-xl text-dark-text">Quizzers Anonymous</span>
-            </div>
+          <div className="col-span-1 md:col-span-2 flex flex-col items-start">
+            <img
+              src="/logo.png"
+              alt="Quizzers Anonymous Logo"
+              className="w-12 h-12 mb-4"
+            />
+            <span className="font-bold text-xl text-dark-text mb-2">Quizzers Anonymous</span>
             <p className="text-dark-text-secondary mb-4">
-              The official quiz club of College of Engineering Guindy, Anna University. 
+              The official quiz club of College of Engineering Guindy, Anna University.
               Join us for exciting quiz competitions, knowledge sharing, and intellectual discussions.
             </p>
             <div className="space-y-2">
@@ -23,8 +23,6 @@ const Footer = () => {
               <p className="text-sm text-dark-text-secondary">Anna University, Chennai</p>
             </div>
           </div>
-
-          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-dark-text">Quick Links</h3>
             <ul className="space-y-2">
@@ -41,7 +39,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-dark-text">Follow Us</h3>
             <div className="space-y-3">
               <a 
-                href="mailto:quizzersanonymousceg@gmail.com" 
+                href="https://mail.google.com/mail/?view=cm&to=quizzersanonymousceg@gmail.com&su=General%20Inquiry" 
                 className="flex items-center space-x-2 text-dark-text-secondary hover:text-accent-blue transition-colors"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
