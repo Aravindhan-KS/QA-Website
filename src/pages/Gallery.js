@@ -9,52 +9,76 @@ const Gallery = () => {
   const images = [
     {
       id: 1,
-      src: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/1.png",
+      src: "/api/placeholder/400/300",
       caption: "Tech Quiz Championship 2024 - Winners' Celebration",
       category: "events"
     },
     {
       id: 2,
-      src: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/2.png",
+      src: "/api/placeholder/300/400",
       caption: "Quiz Master explaining the rules before the competition",
       category: "events"
     },
     {
       id: 3,
-      src: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/3.png",
+      src: "/api/placeholder/400/300",
       caption: "Intense moments during the final round",
       category: "events"
     },
     {
       id: 4,
-      src: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/4.png",
+      src: "/api/placeholder/400/400",
       caption: "Team QA members brainstorming for new quiz questions",
       category: "team"
     },
     {
       id: 5,
-      src: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/5.png",
+      src: "/api/placeholder/300/300",
       caption: "Annual team meetup and planning session",
-      category: "events"
+      category: "team"
     },
     {
       id: 6,
-      src: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/6.png",
+      src: "/api/placeholder/400/300",
       caption: "Science Quiz competition in progress",
       category: "events"
     },
     {
       id: 7,
-      src: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/7.png",
+      src: "/api/placeholder/350/400",
       caption: "New members joining the Quizzers Anonymous family",
       category: "team"
     },
     {
       id: 8,
-      src: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/8.png",
+      src: "/api/placeholder/400/300",
       caption: "General Knowledge Quiz - Packed auditorium",
       category: "events"
     },
+    {
+      id: 9,
+      src: "/api/placeholder/300/300",
+      caption: "Quiz preparation workshop for juniors",
+      category: "workshops"
+    },
+    {
+      id: 10,
+      src: "/api/placeholder/400/350",
+      caption: "Literature Quiz event with renowned authors as judges",
+      category: "events"
+    },
+    {
+      id: 11,
+      src: "/api/placeholder/350/300",
+      caption: "Interactive quiz session with audience participation",
+      category: "workshops"
+    },
+    {
+      id: 12,
+      src: "/api/placeholder/400/300",
+      caption: "Team building activities and fun games",
+      category: "team"
+    }
   ];
 
   const categories = [
@@ -203,7 +227,7 @@ const Gallery = () => {
               Send us your best shots and become part of our visual story.
             </p>
             <a 
-              href="mailto:quizzersanonymousceg@gmail.com?subject=Gallery%20Submission"
+              href="mailto:quizzersanonymous@gmail.com?subject=Gallery%20Submission"
               className="inline-flex items-center space-x-2 bg-accent-cyan text-black px-6 py-3 rounded-lg hover:bg-cyan-400 transition-colors duration-200"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
