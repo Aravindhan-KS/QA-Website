@@ -7,7 +7,7 @@ const Team = () => {
     {
       id: 1,
       name: "Jaison Jecinth Vincent",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/jaison.png",
+      photo: "/api/placeholder/300/300",
       designation: "President",
       year: "3rd Year",
       department: "Computer Science Engineering"
@@ -15,7 +15,7 @@ const Team = () => {
     {
       id: 2,
       name: "Visvam Srinivasan",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/visvam.png",
+      photo: "/api/placeholder/300/300",
       designation: "Vice President",
       year: "3rd Year",
       department: "Computer Science Engineering"
@@ -23,7 +23,7 @@ const Team = () => {
     {
       id: 3,
       name: "Mikul Ramesh",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/mikul.png",
+      photo: "/api/placeholder/300/300",
       designation: "Co-Heads of Curation",
       year: "4th Year",
       department: "Mechanical Engineering",
@@ -31,7 +31,7 @@ const Team = () => {
     {
       id: 4,
       name: "Akash P S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/akash.png",
+      photo: "/api/placeholder/300/300",
       designation: "Co-Heads of Curation",
       year: "4th Year",
       department: "Mechanical Engineering",
@@ -39,7 +39,7 @@ const Team = () => {
     {
       id: 5,
       name: "Girish Sai D",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/girish.png",
+      photo: "/api/placeholder/300/300",
       designation: "Co-Heads of Curation",
       year: "4th Year",
       department: "Information technology",
@@ -47,7 +47,7 @@ const Team = () => {
      {
       id: 6,
       name: "Manoranjan U",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/mano.png",
+      photo: "/api/placeholder/300/300",
       designation: "Head of Operations",
       year: "3rd Year",
       department: "Electronics & Communication Engineering",
@@ -55,7 +55,7 @@ const Team = () => {
      {
       id: 7,
       name: "Sasi Kiran L",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/sasi.png",
+      photo: "/api/placeholder/300/300",
       designation: "Co-Heads of Marketing",
       year: "3rd Year",
       department: "Computer Science Engineering",
@@ -63,7 +63,7 @@ const Team = () => {
      {
       id: 8,
       name: "Shushmita K",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/sushmitha.png",
+      photo: "/api/placeholder/300/300",
       designation: "Co-Heads of Marketing",
       year: "3rd Year",
       department: "Biomedical Engineering",
@@ -71,7 +71,7 @@ const Team = () => {
      {
       id: 9,
       name: "Mohamed Jasim J",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/jasim.png",
+      photo: "/api/placeholder/300/300",
       designation: "Head of Contents",
       year: "3rd Year",
       department: "Computer Science Engineering",
@@ -79,7 +79,7 @@ const Team = () => {
      {
       id: 10,
       name: "Sudarshan V",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/sudharshan.png",
+      photo: "/api/placeholder/300/300",
       designation: "Head of Design",
       year: "3rd Year",
       department: "Electronics & Communication Engineering",
@@ -90,7 +90,7 @@ const Team = () => {
     {
       id: 11,
       name: "Abhishek S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/abhishek.png",
+      photo: "/api/placeholder/300/300",
       designation: "Operations",
       year: "3rd Year",
       department: "Computer Science Engineering",
@@ -98,7 +98,7 @@ const Team = () => {
     {
       id: 12,
       name: "Manesh Ram",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/manesh.png",
+      photo: "/api/placeholder/300/300",
       designation: "Operations",
       year: "3rd Year",
       department: "Computer Science Engineering",
@@ -106,7 +106,7 @@ const Team = () => {
     {
       id: 13,
       name: "Ragotma",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/ragotma.png",
+      photo: "/api/placeholder/300/300",
       designation: "Operations",
       year: "3rd Year",
       department: "Computer Science Engineering",
@@ -114,7 +114,7 @@ const Team = () => {
     {
       id: 14,
       name: "Samyuktha Venkatasamy",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/samyuktha.png",
+      photo: "/api/placeholder/300/300",
       designation: "Operations",
       year: "3rd Year",
       department: "Industrial Engineering",
@@ -122,7 +122,7 @@ const Team = () => {
     {
       id: 15,
       name: "Jeffrey Samuel Raj P",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/Jeffrey.png",
+      photo: "/api/placeholder/300/300",
       designation: "Marketing",
       year: "3rd Year",
       department: "Electronics & Communication Engineering",
@@ -130,7 +130,7 @@ const Team = () => {
     {
       id: 16,
       name: "Parthasarathi N S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/parthasarathy.png",
+      photo: "/api/placeholder/300/300",
       designation: "Contents",
       year: "2nd Year",
       department: "Medical Physics",
@@ -138,7 +138,7 @@ const Team = () => {
     {
       id: 17,
       name: "Suvi Sharon",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/suvi.png",
+      photo: "/api/placeholder/300/300",
       designation: "Contents",
       year: "3rd Year",
       department: "Computer Science Engineering",
@@ -146,7 +146,7 @@ const Team = () => {
     {
       id: 18,
       name: "Nagarajan S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/nagarajan.png",
+      photo: "/api/placeholder/300/300",
       designation: "Design",
       year: "3rd Year",
       department: "Mechanical Engineering",
@@ -154,7 +154,7 @@ const Team = () => {
     {
       id: 19,
       name: "Roshon R",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/roshon.png",
+      photo: "/api/placeholder/300/300",
       designation: "Design",
       year: "3rd Year",
       department: "Biomedical Engineering",
@@ -162,7 +162,7 @@ const Team = () => {
     {
       id: 20,
       name: "A Mohammed Saalih",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/saalih.png",
+      photo: "/api/placeholder/300/300",
       designation: "Design",
       year: "3rd Year",
       department: "Computer Science Engineering",
@@ -170,8 +170,8 @@ const Team = () => {
     {
       id: 21,
       name: "Aravindhan S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/aravindhan.png",
-      designation: "Tech",
+      photo: "/api/placeholder/300/300",
+      designation: "Technical Support",
       year: "3rd Year",
       department: "Computer Science Engineering",
     },
@@ -181,7 +181,7 @@ const Team = () => {
     {
       id: 22,
       name: "Arunprasath M",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/arunprasath.png",
+      photo: "/api/placeholder/300/300",
       designation: "Operations",
       year: "2nd Year",
       department: "Mechanical Engineering",
@@ -189,7 +189,7 @@ const Team = () => {
     {
       id: 23,
       name: "Srivishnu Rajkrishna",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/shrivishnu.png",
+      photo: "/api/placeholder/300/300",
       designation: "Marketing",
       year: "2nd Year",
       department: "Computer Science Engineering",
@@ -197,7 +197,7 @@ const Team = () => {
     {
       id: 24,
       name: "Sachin C K S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/sachin.png",
+      photo: "/api/placeholder/300/300",
       designation: "Contents",
       year: "2nd Year",
       department: "Mechanical Engineering",
@@ -205,7 +205,7 @@ const Team = () => {
     {
       id: 25,
       name: "Kaviya",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/kaviya.png",
+      photo: "/api/placeholder/300/300",
       designation: "Design",
       year: "2nd Year",
       department: "Computer Science Engineering",
@@ -213,7 +213,7 @@ const Team = () => {
     {
       id: 26,
       name: "Ramkumar R",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/ramkumar.png",
+      photo: "/api/placeholder/300/300",
       designation: "Design",
       year: "2nd Year",
       department: "Mechanical Engineering",
@@ -221,7 +221,7 @@ const Team = () => {
     {
       id: 27,
       name: "Sujitha",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/sujitha.png",
+      photo: "/api/placeholder/300/300",
       designation: "Design",
       year: "2nd Year",
       department: "Electrical & Communication Engineering",
