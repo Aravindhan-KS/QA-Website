@@ -337,50 +337,6 @@ const Team = () => {
             </a>
           </div>
         </div>
-
-        {/* Alumni Section */}
-        <div className="mt-16">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-dark-text mb-4">Our Alumni</h2>
-            <p className="text-dark-text-secondary max-w-2xl mx-auto">
-              We're proud of our alumni who have gone on to achieve great things in their careers 
-              while maintaining their passion for learning and knowledge sharing.
-            </p>
-          </div>
-          
-          <div className="bg-dark-card rounded-lg border border-dark-border p-8 text-center">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div>
-                <div className="text-2xl font-bold text-dark-text mb-2">100+</div>
-                <div className="text-dark-text-secondary">Alumni Members</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-dark-text mb-2">25+</div>
-                <div className="text-dark-text-secondary">Companies</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-dark-text mb-2">15+</div>
-                <div className="text-dark-text-secondary">Countries</div>
-              </div>
-            </div>
-            
-            <div className="mt-6">
-              <p className="text-dark-text-secondary mb-4">
-                Our alumni network spans across top companies like Google, Microsoft, Amazon, and many more. 
-                Stay connected with us through our alumni network.
-              </p>
-              <a 
-                href="mailto:quizzersanonymous@gmail.com?subject=Alumni%20Network"
-                className="inline-flex items-center space-x-2 bg-accent-blue text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-200"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                <span>Join Alumni Network</span>
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

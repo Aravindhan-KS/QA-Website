@@ -1,27 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission (placeholder)
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
 
   return (
     <div className="min-h-screen bg-dark-bg py-8">
@@ -136,108 +115,69 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-
-            {/* Map Embed Placeholder */}
+          </div>
+          
+          <div>
+            {/* Google Maps Embed */}
             <div className="mt-8">
-              <h3 className="text-lg font-semibold text-dark-text mb-4">Find Us</h3>
-              <div className="bg-dark-card border border-dark-border rounded-lg overflow-hidden" style={{ height: '250px' }}>
-                {/* Placeholder for Google Maps embed */}
-                <div className="w-full h-full flex items-center justify-center text-dark-text-secondary">
-                  <div className="text-center">
-                    <svg className="w-12 h-12 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                    <p>CEG Square Map</p>
-                    <p className="text-sm">Interactive map will be embedded here</p>
-                  </div>
-                </div>
+              <h3 className="text-lg font-semibold text-dark-text mb-4">Our Location</h3>
+              <div className="bg-dark-card border border-dark-border rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1111.044763878229!2d80.23635566960469!3d13.010738899206785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526700035eebd9%3A0x7984c41bf20d3100!2sCEG%20Square!5e1!3m2!1sen!2sin!4v1758214888628!5m2!1sen!2sin"
+                  width="100%"
+                  height="400"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="College of Engineering Guindy Location"
+                ></iframe>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Contact Form */}
-          <div>
-            <h2 className="text-2xl font-bold text-dark-text mb-6">Send us a Message</h2>
+        {/* Alumni Section */}
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-dark-text mb-4">Our Alumni</h2>
+            <p className="text-dark-text-secondary max-w-2xl mx-auto">
+              We're proud of our alumni who have gone on to achieve great things in their careers 
+              while maintaining their passion for learning and knowledge sharing.
+            </p>
+          </div>
+          
+          <div className="bg-dark-card rounded-lg border border-dark-border p-8 text-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div>
+                <div className="text-2xl font-bold text-dark-text mb-2">100+</div>
+                <div className="text-dark-text-secondary">Alumni Members</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-dark-text mb-2">25+</div>
+                <div className="text-dark-text-secondary">Companies</div>
+              </div>
+              <div>
+                <div className="text-2xl font-bold text-dark-text mb-2">15+</div>
+                <div className="text-dark-text-secondary">Countries</div>
+              </div>
+            </div>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-dark-text mb-2">
-                  Full Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 border border-dark-border rounded-lg bg-dark-surface text-dark-text placeholder-dark-text-secondary focus:outline-none focus:ring-2 focus:ring-accent-blue focus:border-transparent"
-                  placeholder="Enter your full name"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-dark-text mb-2">
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 border border-dark-border rounded-lg bg-dark-surface text-dark-text placeholder-dark-text-secondary focus:outline-none focus:ring-2 focus:ring-accent-blue focus:border-transparent"
-                  placeholder="Enter your email address"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-dark-text mb-2">
-                  Subject *
-                </label>
-                <select
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 border border-dark-border rounded-lg bg-dark-surface text-dark-text focus:outline-none focus:ring-2 focus:ring-accent-blue focus:border-transparent"
-                >
-                  <option value="">Select a subject</option>
-                  <option value="event-inquiry">Event Inquiry</option>
-                  <option value="collaboration">Collaboration</option>
-                  <option value="membership">Membership</option>
-                  <option value="quiz-questions">Quiz Questions</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-dark-text mb-2">
-                  Message *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                  rows={6}
-                  className="w-full px-4 py-3 border border-dark-border rounded-lg bg-dark-surface text-dark-text placeholder-dark-text-secondary focus:outline-none focus:ring-2 focus:ring-accent-blue focus:border-transparent resize-vertical"
-                  placeholder="Enter your message here..."
-                />
-              </div>
-              
-              <button
-                type="submit"
-                className="w-full bg-accent-blue text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition-colors duration-200 font-medium"
+            <div className="mt-6">
+              <p className="text-dark-text-secondary mb-4">
+                Our alumni network spans across top companies like Google, Microsoft, Amazon, and many more. 
+                Stay connected with us through our alumni network.
+              </p>
+              <a 
+                href="www.google.com"
+                className="inline-flex items-center space-x-2 bg-accent-blue text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-200"
               >
-                Send Message
-              </button>
-            </form>
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span>Join Alumni Network</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>

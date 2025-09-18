@@ -10,10 +10,12 @@ import Gallery from './pages/Gallery';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
 import './App.css';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   return (
     <Router>
+      <SpeedInsights />
       <div className="App min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">

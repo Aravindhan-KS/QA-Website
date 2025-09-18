@@ -144,7 +144,7 @@ const Home = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-dark-text mb-2">Quiz Sets</h3>
-              <p className="text-dark-text-secondary">Download and practice with our curated collection of quiz questions.</p>
+              <p className="text-dark-text-secondary">Practice with our curated collection of quiz questions.</p>
             </a>
             
             <a 
