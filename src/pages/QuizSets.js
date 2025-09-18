@@ -28,8 +28,7 @@ const QuizSets = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-dark-text mb-4">Quiz Sets</h1>
           <p className="text-xl text-dark-text-secondary max-w-3xl mx-auto">
-            Download our carefully curated quiz sets to practice and improve your knowledge. 
-            Each set contains high-quality questions across various categories.
+           Check out some of our quiz sets! Some from our Instagram quizzes and some of our sets used in events!
           </p>
         </div>
 
@@ -84,7 +83,7 @@ const QuizSets = () => {
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
                   </svg>
-                  <span>Check out the Quiz Set</span>
+                  <span>Check it out</span>
                 </a>
               </div>
             </div>
