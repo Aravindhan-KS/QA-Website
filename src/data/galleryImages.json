@@ -1,58 +1,58 @@
 [
   {
     "id": 1,
-    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/1.png",
-    "caption": "Tech Quiz Championship 2024 - Winners' Celebration",
+    "src": "/media/pictures/gallery/1.png",
+    "caption": "Kollywood Quiz - Sync 2024 (CSE Dept.)",
     "category": "events",
     "year": 2024
   },
-  {
+    {
     "id": 2,
-    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/2.png",
-    "caption": "Quiz Master explaining the rules before the competition",
+    "src": "/media/pictures/gallery/2.png",
+    "caption": "Kollywood Quiz - Sync 2024 (CSE Dept.)",
     "category": "events",
     "year": 2024
   },
-  {
+    {
     "id": 3,
-    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/3.png",
-    "caption": "Intense moments during the final round",
+    "src": "/media/pictures/gallery/3.png",
+    "caption": "Kollywood Quiz - Sync 2024 (CSE Dept.)",
     "category": "events",
     "year": 2024
   },
-  {
+    {
     "id": 4,
-    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/4.png",
-    "caption": "Team QA members brainstorming for new quiz questions",
-    "category": "team",
-    "year": 2025
+    "src": "/media/pictures/gallery/4.png",
+    "caption": "Sportflix - i++ 2024 (IST Dept.)",
+    "category": "events",
+    "year": 2024
   },
-  {
+    {
     "id": 5,
-    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/5.png",
-    "caption": "Annual team meetup and planning session",
+    "src": "/media/pictures/gallery/5.png",
+    "caption": "Entertainment Quiz - Techofes 2024",
     "category": "events",
-    "year": 2025
+    "year": 2024
   },
-  {
+    {
     "id": 6,
-    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/6.png",
-    "caption": "Science Quiz competition in progress",
+    "src": "/media/pictures/gallery/6.png",
+    "caption": "Fandom Quiz - Abacus 2024 (CSE Dept.)",
     "category": "events",
-    "year": 2025
+    "year": 2024
   },
-  {
+    {
     "id": 7,
-    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/7.png",
-    "caption": "New members joining the Quizzers Anonymous family",
-    "category": "team",
-    "year": 2025
-  },
-  {
-    "id": 8,
-    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/8.png",
-    "caption": "General Knowledge Quiz - Packed auditorium",
+    "src": "/media/pictures/gallery/7.png",
+    "caption": "The Big Fat Fandom Quiz - Litablaze 2024",
     "category": "events",
-    "year": 2025
+    "year": 2024
+  },
+      {
+    "id": 8,
+    "src": "/media/pictures/gallery/7.png",
+    "caption": "The Big Fat Fandom Quiz - Litablaze 2024",
+    "category": "events",
+    "year": 2024
   }
 ]
