@@ -2,7 +2,7 @@
 
 The official website for Quizzers Anonymous, College of Engineering Guindy's premier quiz club. A modern React-based platform showcasing our events, team, articles, quiz sets, and gallery.
 
-## � Content Management Tutorial
+## Content Management Tutorial
 
 For detailed instructions on how to add new content (events, articles, gallery images, quiz sets), please refer to our [Content Management Tutorial](CONTENT_MANAGEMENT.md).
 
