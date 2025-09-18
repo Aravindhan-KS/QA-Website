@@ -1,64 +1,10 @@
 import React from 'react';
 import EventCard from '../components/EventCard';
+import events from '../data/events.json';
 
 const Events = () => {
-  // Mock events data
-  const events = [
-    {
-      id: 1,
-      title: "Tech Quiz Championship 2025",
-      description: "Join us for the biggest tech quiz of the year! Test your knowledge on the latest developments in technology, programming, and innovation. Exciting prizes await the winners!",
-      date: "2025-03-15",
-      time: "10:00 AM",
-      venue: "Main Auditorium, CEG",
-      poster: "/api/placeholder/400/250"
-    },
-    {
-      id: 2,
-      title: "General Knowledge Extravaganza",
-      description: "A comprehensive quiz covering history, geography, current affairs, sports, and entertainment. Perfect for those who love to know a bit about everything!",
-      date: "2025-02-28",
-      time: "2:00 PM",
-      venue: "Seminar Hall 1, CEG",
-      poster: "/api/placeholder/400/250"
-    },
-    {
-      id: 3,
-      title: "Science & Innovation Quiz",
-      description: "Explore the fascinating world of science and innovation. From breakthrough discoveries to cutting-edge research, test your scientific knowledge.",
-      date: "2025-02-14",
-      time: "11:00 AM",
-      venue: "Physics Auditorium, CEG",
-      poster: "/api/placeholder/400/250"
-    },
-    {
-      id: 4,
-      title: "Literature & Arts Quiz",
-      description: "Dive deep into the world of literature, arts, and culture. From classic novels to contemporary poetry, from Renaissance art to modern cinema.",
-      date: "2025-01-30",
-      time: "3:00 PM",
-      venue: "English Department Hall, CEG",
-      poster: "/api/placeholder/400/250"
-    },
-    {
-      id: 5,
-      title: "Business & Economics Quiz",
-      description: "Test your knowledge of business strategies, economic theories, market trends, and entrepreneurship. Great for management and economics enthusiasts.",
-      date: "2025-01-15",
-      time: "1:00 PM",
-      venue: "Management Studies Block, CEG",
-      poster: "/api/placeholder/400/250"
-    },
-    {
-      id: 6,
-      title: "Sports Quiz Bonanza",
-      description: "From Olympic records to cricket statistics, from football legends to tennis champions. The ultimate quiz for sports enthusiasts!",
-      date: "2024-12-20",
-      time: "4:00 PM",
-      venue: "Sports Complex, CEG",
-      poster: "/api/placeholder/400/250"
-    }
-  ];
+  const upcomingEvents = events.filter((event) => event.eventStatus === "upcoming");
+  const completedEvents = events.filter((event) => event.eventStatus === "completed");
 
   return (
     <div className="min-h-screen bg-dark-bg py-8">
@@ -72,12 +18,29 @@ const Events = () => {
           </p>
         </div>
 
-        {/* Events Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {events.map((event) => (
-            <EventCard key={event.id} event={event} />
-          ))}
-        </div>
+        {/* Upcoming Events */}
+        {upcomingEvents.length > 0 && (
+          <div className="mb-16">
+            <h2 className="text-3xl font-semibold text-dark-text mb-8 text-center">Upcoming Events</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {upcomingEvents.map((event) => (
+                <EventCard key={event.id} event={event} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Completed Events */}
+        {completedEvents.length > 0 && (
+          <div className="mb-16">
+            <h2 className="text-3xl font-semibold text-dark-text mb-8 text-center">Completed Events</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {completedEvents.map((event) => (
+                <EventCard key={event.id} event={event} />
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Call to Action */}
         <div className="mt-16 text-center">

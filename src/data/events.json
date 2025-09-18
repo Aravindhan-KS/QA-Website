@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Openguessr Championship",
+    "description": "A championship on the Openguessr game - where places have to be guessed with Google Maps.",
+    "date": "2025-07-20",
+    "time": "4:00 AM",
+    "venue": "Gmeet",
+    "poster": "/api/placeholder/400/250",
+    "reportUrl": "https://example.com/reports/openguessr.pdf",
+    "eventStatus": "completed"
+  },
+    {
+    "id": 2,
+    "title": "Sound Check",
+    "description": "A championship on the Openguessr game - where places have to be guessed with Google Maps.",
+    "date": "2025-07-20",
+    "time": "4:00 AM",
+    "venue": "Gmeet",
+    "poster": "/api/placeholder/400/250",
+    "reportUrl": "https://example.com/reports/openguessr.pdf",
+    "eventStatus": "upcoming"
+  }
+]

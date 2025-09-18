@@ -1,11 +1,6 @@
 import React from 'react';
 
 const EventCard = ({ event }) => {
-  const handlePDFDownload = () => {
-    // Placeholder for PDF download functionality
-    alert(`Downloading PDF report for ${event.title}`);
-  };
-
   return (
     <div className="bg-dark-card rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:shadow-dark-hover/50 transition-all duration-300 border border-dark-border">
       <div className="relative">
@@ -14,9 +9,24 @@ const EventCard = ({ event }) => {
           alt={event.title}
           className="w-full h-48 object-cover"
         />
+        
+        {/* Date Badge */}
         <div className="absolute top-4 right-4 bg-dark-bg bg-opacity-75 text-dark-text px-2 py-1 rounded text-sm">
           {event.date}
         </div>
+
+        {/* Status Badge */}
+        {event.eventStatus && (
+          <div
+            className={`absolute top-4 left-4 px-3 py-1 rounded text-xs font-semibold uppercase tracking-wide ${
+              event.eventStatus === 'upcoming'
+                ? 'bg-green-600 text-white'
+                : 'bg-gray-600 text-white'
+            }`}
+          >
+            {event.eventStatus}
+          </div>
+        )}
       </div>
       
       <div className="p-6">
@@ -28,7 +38,7 @@ const EventCard = ({ event }) => {
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
-            {event.date} at {event.time}
+            {event.date} {event.time && `at ${event.time}`}
           </div>
           <div className="flex items-center text-sm text-dark-text-secondary">
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -39,15 +49,19 @@ const EventCard = ({ event }) => {
           </div>
         </div>
         
-        <button
-          onClick={handlePDFDownload}
-          className="w-full bg-accent-blue text-white py-2 px-4 rounded-md hover:bg-blue-500 transition-colors duration-200 flex items-center justify-center space-x-2"
-        >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-          </svg>
-          <span>Download Report</span>
-        </button>
+        {event.reportUrl && (
+          <a
+            href={event.reportUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full inline-flex items-center justify-center space-x-2 bg-accent-blue text-white py-2 px-4 rounded-md hover:bg-blue-500 transition-colors duration-200"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+            </svg>
+            <span>Download Report</span>
+          </a>
+        )}
       </div>
     </div>
   );
