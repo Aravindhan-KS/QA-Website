@@ -1,21 +1,30 @@
-# QA-Website
+# QA-Website - Quizzers Anonymous
 
-A modern Questions and Answers platform built with React.
+The official website for Quizzers Anonymous, College of Engineering Guindy's premier quiz club. A modern React-based platform showcasing our events, team, articles, quiz sets, and gallery.
+
+## � Content Management Tutorial
+
+For detailed instructions on how to add new content (events, articles, gallery images, quiz sets), please refer to our [Content Management Tutorial](CONTENT_MANAGEMENT.md).
 
 ## 🚀 Features
 
-- **Interactive Q&A Interface**: Browse existing questions and answers
-- **Add New Questions**: Submit your own questions with answers
-- **Responsive Design**: Works perfectly on desktop and mobile devices
-- **Modern UI**: Clean and intuitive user interface
-- **Real-time Updates**: Questions appear instantly after submission
+- **Event Management**: Display upcoming and completed quiz events with details
+- **Team Showcase**: Meet our current team members and alumni network
+- **Articles Section**: Knowledge sharing through informative articles
+- **Quiz Sets**: Access our curated quiz question sets
+- **Interactive Gallery**: Browse photos from our events and activities
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+- **Modern UI**: Clean, dark-themed interface with smooth animations
+- **Contact Integration**: Multiple ways to get in touch with the club
 
 ## 🛠️ Technologies Used
 
 - **React 18** - Modern JavaScript library for building user interfaces
-- **React Hooks** - useState for state management
-- **CSS3** - Custom styling with responsive design
-- **React Testing Library** - For component testing
+- **React Router DOM** - Client-side routing for single-page application
+- **Tailwind CSS** - Utility-first CSS framework for rapid UI development
+- **React Social Media Embed** - Instagram post embedding
+- **Vercel Speed Insights** - Performance monitoring
+- **React Testing Library** - Component testing framework
 
 ## 📦 Getting Started
 
@@ -44,30 +53,25 @@ A modern Questions and Answers platform built with React.
 
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 🔧 Available Scripts
+## 🎨 Website Structure
 
-In the project directory, you can run:
+### Main Pages
 
-- `npm start` - Runs the app in development mode
-- `npm test` - Launches the test runner
-- `npm run build` - Builds the app for production
-- `npm run eject` - Ejects from Create React App (one-way operation)
+- **Home**: Welcome page with club introduction and highlights
+- **Events**: Showcase of upcoming and past quiz events
+- **Team**: Current team members with roles and contact information
+- **Articles**: Educational content and quiz-related articles
+- **Quiz Sets**: Collection of downloadable quiz question sets
+- **Gallery**: Photo gallery from events and activities
+- **Contact**: Multiple ways to reach the club with embedded map
 
-## 🎨 Features Overview
+### Key Components
 
-### Main Components
-
-- **Header**: Displays the app title and description
-- **Add Question Form**: Allows users to submit new Q&A pairs
-- **Questions List**: Displays all questions and answers in card format
-- **Footer**: Simple footer with copyright information
-
-### User Interactions
-
-- Click "Add New Question" to reveal the submission form
-- Fill in both question and answer fields
-- Submit to add the new Q&A to the list
-- View all questions in an organized card layout
+- **Navbar**: Responsive navigation with dark theme
+- **EventCard**: Individual event display with status indicators
+- **MemberCard**: Team member profiles with photos and details
+- **GalleryImage**: Interactive image viewer with modal
+- **Footer**: Social media links and contact information
 
 ## 🤝 Contributing
 
@@ -81,20 +85,18 @@ In the project directory, you can run:
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🐛 Known Issues
+## 🏗️ Project Structure
 
-None at the moment. If you find any bugs, please report them in the issues section.
+```
+src/
+├── components/         # Reusable React components
+├── data/               # JSON data files
+│   ├── events.json     # Event data
+│   ├── quizSets.json   # Quiz sets data
+│   └── galleryImages.json # Gallery images data
+├── pages/              # Main page components
+├── utils/              # Utility functions
+└── App.js              # Main application component
+```
 
-## 🔮 Future Enhancements
-
-- User authentication and profiles
-- Question categories and tags
-- Search and filter functionality
-- Voting system for questions and answers
-- Comment system
-- Database integration
-- Admin panel
-
----
-
-Built with ❤️ using React
+Built with ❤️ by Quizzers Anonymous Team
