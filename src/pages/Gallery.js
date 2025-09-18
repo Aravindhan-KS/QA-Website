@@ -52,44 +52,13 @@ const Gallery = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-dark-text mb-4">Gallery</h1>
           <p className="text-xl text-dark-text-secondary max-w-3xl mx-auto">
-            Relive the memorable moments from our quiz competitions, team activities, and workshops.
+            The Memories of Quizzing.
           </p>
         </div>
 
-         {/* Stats Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
-            <div className="text-3xl font-bold text-accent-blue mb-2">{images.length}</div>
-            <div className="text-dark-text-secondary">Total Photos</div>
-          </div>
-          <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
-            <div className="text-3xl font-bold text-accent-green mb-2">15+</div>
-            <div className="text-dark-text-secondary">Events Documented</div>
-          </div>
-          <div className="bg-dark-card rounded-lg border border-dark-border p-6 text-center">
-            <div className="text-3xl font-bold text-purple-400 mb-2">3</div>
-            <div className="text-dark-text-secondary">Years of Memories</div>
-          </div>
-        </div>
-
+    
         <br></br>
 
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setFilter(category.id)}
-              className={`px-6 py-3 rounded-lg font-medium transition-colors duration-200 ${
-                filter === category.id
-                  ? 'bg-accent-blue text-white'
-                  : 'bg-dark-card text-dark-text border border-dark-border hover:bg-dark-hover'
-              }`}
-            >
-              {category.name} ({category.count})
-            </button>
-          ))}
-        </div>
 
         {/* Year Filters */}
         <div className="flex flex-wrap justify-center gap-4 mb-8">
