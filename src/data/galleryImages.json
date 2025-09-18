@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/1.png",
+    "caption": "Tech Quiz Championship 2024 - Winners' Celebration",
+    "category": "events",
+    "year": 2024
+  },
+  {
+    "id": 2,
+    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/2.png",
+    "caption": "Quiz Master explaining the rules before the competition",
+    "category": "events",
+    "year": 2024
+  },
+  {
+    "id": 3,
+    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/3.png",
+    "caption": "Intense moments during the final round",
+    "category": "events",
+    "year": 2024
+  },
+  {
+    "id": 4,
+    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/4.png",
+    "caption": "Team QA members brainstorming for new quiz questions",
+    "category": "team",
+    "year": 2025
+  },
+  {
+    "id": 5,
+    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/5.png",
+    "caption": "Annual team meetup and planning session",
+    "category": "events",
+    "year": 2025
+  },
+  {
+    "id": 6,
+    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/6.png",
+    "caption": "Science Quiz competition in progress",
+    "category": "events",
+    "year": 2025
+  },
+  {
+    "id": 7,
+    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/7.png",
+    "caption": "New members joining the Quizzers Anonymous family",
+    "category": "team",
+    "year": 2025
+  },
+  {
+    "id": 8,
+    "src": "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Events/8.png",
+    "caption": "General Knowledge Quiz - Packed auditorium",
+    "category": "events",
+    "year": 2025
+  }
+]
