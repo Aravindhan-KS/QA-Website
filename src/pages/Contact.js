@@ -17,7 +17,7 @@ const Contact = () => {
         <div className="max-w-3xl mx-auto space-y-8">
           {/* Office Location */}
           <div>
-            <h3 className="font-semibold text-dark-text mb-4">Office Location</h3>
+            <h3 className="font-semibold text-dark-text mb-4">Club Room Location</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
               
               {/* Location Details */}
@@ -80,13 +80,13 @@ const Contact = () => {
               <h3 className="font-semibold text-dark-text">Contact Numbers</h3>
               <div className="space-y-1">
                 <div>
-                  <span className="text-dark-text-secondary">President: </span>
+                  <span className="text-dark-text-secondary">Jaison Jecinth Vincent (President): </span>
                   <a href="tel:+919025601119" className="text-accent-blue hover:text-blue-400 transition-colors">
                     +91 90256 01119
                   </a>
                 </div>
                 <div>
-                  <span className="text-dark-text-secondary">Vice President: </span>
+                  <span className="text-dark-text-secondary">Visvam Srinivasan (Vice President): </span>
                   <a href="tel:+916385050355" className="text-accent-blue hover:text-blue-400 transition-colors">
                     +91 63850 50355
                   </a>
