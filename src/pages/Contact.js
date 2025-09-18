@@ -14,13 +14,14 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
+        {/* Contact Information */}
+        <div className="max-w-3xl mx-auto space-y-8">
+          {/* Office Location */}
           <div>
-            <h2 className="text-2xl font-bold text-dark-text mb-6">Get in Touch</h2>
-            
-            <div className="space-y-6">
-              {/* Office Location */}
+            <h3 className="font-semibold text-dark-text mb-4">Club Room Location</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+              
+              {/* Location Details */}
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
                   <svg className="w-6 h-6 text-dark-text-secondary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -29,56 +30,71 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-dark-text">Office Location</h3>
                   <p className="text-dark-text-secondary">Room No. 11, Third Floor, CEG Square</p>
                   <p className="text-dark-text-secondary">College of Engineering Guindy</p>
                   <p className="text-dark-text-secondary">Anna University, Chennai - 600025</p>
                 </div>
               </div>
 
-              {/* Email */}
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <svg className="w-6 h-6 text-dark-text-secondary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
+              {/* Google Map Embed */}
+              <div className="w-full h-48 md:h-40 rounded-lg overflow-hidden border border-dark-border">
+                <iframe
+                  title="CEG Square Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1414.6752982697042!2d80.23602360286792!3d13.010407748628209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526700035eebd9%3A0x7984c41bf20d3100!2sCEG%20Square!5e0!3m2!1sen!2sin!4v1758216082209!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+</div>
+
+
+          {/* Email */}
+          <div className="flex items-start space-x-4">
+            <div className="flex-shrink-0">
+              <svg className="w-6 h-6 text-dark-text-secondary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="font-semibold text-dark-text">Email</h3>
+              <a 
+                href="mailto:quizzersanonymousceg@gmail.com" 
+                className="text-accent-blue hover:text-blue-400 transition-colors"
+              >
+                quizzersanonymousceg@gmail.com
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Numbers */}
+          <div className="flex items-start space-x-4">
+            <div className="flex-shrink-0">
+              <svg className="w-6 h-6 text-dark-text-secondary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="font-semibold text-dark-text">Contact Numbers</h3>
+              <div className="space-y-1">
+                <div>
+                  <span className="text-dark-text-secondary">Jaison Jecinth Vincent (President): </span>
+                  <a href="tel:+919025601119" className="text-accent-blue hover:text-blue-400 transition-colors">
+                    +91 90256 01119
+                  </a>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-dark-text">Email</h3>
-                  <a 
-                    href="mailto:quizzersanonymousceg@gmail.com" 
-                    className="text-accent-blue hover:text-blue-400 transition-colors"
-                  >
-                    quizzersanonymousceg@gmail.com
+                  <span className="text-dark-text-secondary">Visvam Srinivasan (Vice President): </span>
+                  <a href="tel:+916385050355" className="text-accent-blue hover:text-blue-400 transition-colors">
+                    +91 63850 50355
                   </a>
                 </div>
               </div>
-
-              {/* Contact Numbers */}
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <svg className="w-6 h-6 text-dark-text-secondary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-dark-text">Contact Numbers</h3>
-                  <div className="space-y-1">
-                    <div>
-                      <span className="text-dark-text-secondary">President: </span>
-                      <a href="tel:+919025601119" className="text-accent-blue hover:text-blue-400 transition-colors">
-                        +91 90256 01119
-                      </a>
-                    </div>
-                    <div>
-                      <span className="text-dark-text-secondary">Vice President: </span>
-                      <a href="tel:+916385050355" className="text-accent-blue hover:text-blue-400 transition-colors">
-                        +91 63850 50355
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
+          </div>
 
               {/* Social Media */}
               <div className="flex items-start space-x-4">

@@ -23,11 +23,20 @@ const Gallery = () => {
   ];
 
   // Apply both filters
-  const filteredImages = images.filter(img => {
-    const categoryMatch = filter === 'all' || img.category === filter;
-    const yearMatch = yearFilter === 'all' || img.year.toString() === yearFilter;
-    return categoryMatch && yearMatch;
-  });
+  // Apply both filters
+  const filteredImages = images
+    .filter(img => {
+      const categoryMatch = filter === 'all' || img.category === filter;
+      const yearMatch = yearFilter === 'all' || img.year.toString() === yearFilter;
+      return categoryMatch && yearMatch;
+    })
+    .sort((a, b) => {
+      // First sort by year (descending = newer first)
+      if (b.year !== a.year) return b.year - a.year;
+      // If years are the same, sort by id (descending = newer uploads first)
+      return b.id - a.id;
+    });
+
 
   const openModal = (image) => setSelectedImage(image);
   const closeModal = () => setSelectedImage(null);
@@ -91,17 +100,32 @@ const Gallery = () => {
           <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
             <div className="relative max-w-4xl max-h-full">
               {/* Close */}
-              <button onClick={closeModal} className="absolute top-4 right-4 text-white hover:text-gray-300 z-10">
-                ✕
+              <button
+                onClick={closeModal}
+                className="absolute top-4 right-4 text-white hover:text-gray-300 z-10 
+                          w-12 h-12 flex items-center justify-center rounded-full bg-black bg-opacity-40"
+              >
+                <span className="text-3xl font-bold">✕</span>
               </button>
+
               {/* Prev */}
-              <button onClick={prevImage} className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white">
-                ‹
+              <button
+                onClick={prevImage}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white 
+                          hover:text-gray-300 z-10 w-14 h-14 flex items-center justify-center rounded-full bg-black bg-opacity-40"
+              >
+                <span className="text-4xl">‹</span>
               </button>
+
               {/* Next */}
-              <button onClick={nextImage} className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white">
-                ›
+              <button
+                onClick={nextImage}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white 
+                          hover:text-gray-300 z-10 w-14 h-14 flex items-center justify-center rounded-full bg-black bg-opacity-40"
+              >
+                <span className="text-4xl">›</span>
               </button>
+
               {/* Image */}
               <img src={selectedImage.src} alt={selectedImage.caption} className="max-w-full max-h-full object-contain" />
               {/* Caption */}
