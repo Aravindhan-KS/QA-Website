@@ -3,8 +3,17 @@ import EventCard from '../components/EventCard';
 import events from '../data/events.json';
 
 const Events = () => {
-  const upcomingEvents = events.filter((event) => event.eventStatus === "upcoming");
-  const completedEvents = events.filter((event) => event.eventStatus === "completed");
+  // Sort events by date (newest first)
+  const sortedEvents = [...events].sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
+
+  const upcomingEvents = sortedEvents.filter(
+    (event) => event.eventStatus === "upcoming"
+  );
+  const completedEvents = sortedEvents.filter(
+    (event) => event.eventStatus === "completed"
+  );
 
   return (
     <div className="min-h-screen bg-dark-bg py-8">
@@ -13,8 +22,7 @@ const Events = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-dark-text mb-4">Events</h1>
           <p className="text-xl text-dark-text-secondary max-w-3xl mx-auto">
-            Join us for exciting quiz competitions and knowledge-sharing events. 
-            From tech challenges to general knowledge battles, there's something for everyone!
+            Join us for exciting quizzes and other fun events!
           </p>
         </div>
 
@@ -47,22 +55,11 @@ const Events = () => {
           <div className="bg-dark-card rounded-lg border border-dark-border p-8 max-w-2xl mx-auto">
             <h2 className="text-2xl font-bold text-dark-text mb-4">Want to Participate?</h2>
             <p className="text-dark-text-secondary mb-6">
-              Stay updated with our latest events and never miss a quiz competition. 
-              Follow us on social media and join our mailing list.
+              Want to know get updates on our upcoming events? Follow us on Instagram!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="mailto:quizzersanonymous@gmail.com"
-                className="bg-accent-blue text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-200 flex items-center justify-center space-x-2"
-              >
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                </svg>
-                <span>Subscribe to Updates</span>
-              </a>
-              <a 
-                href="https://instagram.com/quizzersanonymous"
+                href="https://www.instagram.com/cegquizclub/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-accent-cyan text-accent-cyan px-6 py-3 rounded-lg hover:bg-accent-cyan hover:text-black transition-colors duration-200 flex items-center justify-center space-x-2"

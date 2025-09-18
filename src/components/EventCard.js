@@ -5,10 +5,11 @@ const EventCard = ({ event }) => {
     <div className="bg-dark-card rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:shadow-dark-hover/50 transition-all duration-300 border border-dark-border">
       <div className="relative">
         <img
-          src={event.poster || '/api/placeholder/400/250'}
+          src={event.poster || '/api/placeholder/400/500'}
           alt={event.title}
-          className="w-full h-48 object-cover"
+          className="w-full aspect-[4/5] object-cover"
         />
+
         
         {/* Date Badge */}
         <div className="absolute top-4 right-4 bg-dark-bg bg-opacity-75 text-dark-text px-2 py-1 rounded text-sm">

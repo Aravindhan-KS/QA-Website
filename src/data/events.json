@@ -4,21 +4,43 @@
     "title": "Openguessr Championship",
     "description": "A championship on the Openguessr game - where places have to be guessed with Google Maps.",
     "date": "2025-07-20",
-    "time": "4:00 AM",
+    "time": "4:00 PM",
     "venue": "Gmeet",
-    "poster": "/api/placeholder/400/250",
+    "poster": "/media/pictures/events/openguesssr.png",
     "reportUrl": "https://example.com/reports/openguessr.pdf",
     "eventStatus": "completed"
   },
     {
     "id": 2,
-    "title": "Sound Check",
-    "description": "A championship on the Openguessr game - where places have to be guessed with Google Maps.",
-    "date": "2025-07-20",
-    "time": "4:00 AM",
+    "title": "The Odyssey - Mythology Quiz",
+    "description": "A quiz exploring the myths and legends of the Greek, Romans, Hindu, Islam, Chinese and more!",
+    "date": "2025-08-03",
+    "time": "5:00 PM",
     "venue": "Gmeet",
-    "poster": "/api/placeholder/400/250",
+    "poster": "/media/pictures/events/mythQuiz.png",
     "reportUrl": "https://example.com/reports/openguessr.pdf",
+    "eventStatus": "completed"
+  },
+    {
+    "id": 1,
+    "title": "Lokesh Kanakaraj Quiz and Coolie movie discussion",
+    "description": "A quiz on the famed director Loki and a discussion on his then new hyped movie Coolie.",
+    "date": "2025-08-23",
+    "time": "8:00 PM",
+    "venue": "Gmeet",
+    "poster": "/media/pictures/events/coolie.png",
+    "reportUrl": "https://example.com/reports/openguessr.pdf",
+    "eventStatus": "completed"
+  },
+    {
+    "id": 2,
+    "title": "Sound Check - Music Quiz",
+    "description": "Pop, rap, kutthu paatu, carnatic,.... A Quiz celebrating one of humanity's greatest discovery - Music!",
+    "date": "2025-09-22",
+    "time": "4:45 PM",
+    "venue": "Red Building Room 75",
+    "poster": "/media/pictures/events/wip.png",
+    "reportUrl": "",
     "eventStatus": "upcoming"
   }
 ]
