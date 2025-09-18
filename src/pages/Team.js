@@ -237,8 +237,7 @@ const Team = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-dark-text mb-4">Our Team</h1>
           <p className="text-xl text-dark-text-secondary max-w-3xl mx-auto">
-            Meet the passionate individuals behind Quizzers Anonymous. Our diverse team brings together 
-            students from various departments, united by a shared love for knowledge and learning.
+            Meet the Team Anonymous, the ones behind the trivia and fun!
           </p>
         </div>
 
@@ -247,9 +246,6 @@ const Team = () => {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-dark-text mb-4">Heads</h2>
             <div className="w-24 h-1 bg-accent-yellow mx-auto"></div>
-            <p className="text-dark-text-secondary mt-4 max-w-2xl mx-auto">
-              The leadership team that guides our vision and strategic direction
-            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -264,9 +260,6 @@ const Team = () => {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-dark-text mb-4">Senior Coordinators</h2>
             <div className="w-24 h-1 bg-accent-blue mx-auto"></div>
-            <p className="text-dark-text-secondary mt-4 max-w-2xl mx-auto">
-              Experienced members who manage specialized areas and mentor junior coordinators
-            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -281,9 +274,6 @@ const Team = () => {
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-dark-text mb-4">Junior Coordinators</h2>
             <div className="w-24 h-1 bg-accent-green mx-auto"></div>
-            <p className="text-dark-text-secondary mt-4 max-w-2xl mx-auto">
-              Our enthusiastic newer members who bring fresh ideas and energy to the team
-            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -312,6 +302,7 @@ const Team = () => {
             <div className="text-dark-text-secondary">Total Members</div>
           </div>
         </div>
+<<<<<<< HEAD
 
         {/* Join Us Section */}
         <div className="bg-gradient-to-r from-dark-surface to-dark-card rounded-lg border border-dark-border p-8 text-center">
@@ -337,6 +328,8 @@ const Team = () => {
             </a>
           </div>
         </div>
+=======
+>>>>>>> 3b0f3e5ccbdd701c7b6ecd1ebaf339e25b40eb90
       </div>
     </div>
   );
