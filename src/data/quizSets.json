@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Superman Set",
+    "description": "Quizzers Sundae Set - July 21 2025",
+    "category": "Entertainment",
+    "questions": 7,
+    "downloadUrl": "https://www.instagram.com/p/DMYMyb7SlMQ/?img_index=1"
+  },
+    {
+    "id": 2,
+    "title": "India VS England",
+    "description": "Quizzers Sundae Set - July 27 2025",
+    "category": "Sports",
+    "questions": 8,
+    "downloadUrl": "https://www.instagram.com/p/DMnZ4-fyIn1/?img_index=1"
+  },
+    {
+    "id": 3,
+    "title": "The Ultimate Gen Z Test",
+    "description": "Litclub AU and QA Collab Quizzers Sundae Set - Aug 3 2025",
+    "category": "Arts & Literature",
+    "questions": 10,
+    "downloadUrl": "https://www.instagram.com/p/DM4ZDZyy1Ex/?img_index=1"
+  },
+    {
+    "id": 4,
+    "title": "Quiz on Stage",
+    "description": "Theatron AU Collab Quizzers Sundae Set - Aug 10 2025",
+    "category": "Entertainment",
+    "questions": 8,
+    "downloadUrl": "https://www.instagram.com/p/DNLJwL1SIqQ/?img_index=1"
+  },
+      {
+    "id": 5,
+    "title": "Independence Day Set",
+    "description": "Leo Club CEG Collab Quizzers Sundae Set - Aug 16 2025",
+    "category": "History & Geography",
+    "questions": 10,
+    "downloadUrl": "https://www.instagram.com/p/DNa80CkyS1n/?img_index=1"
+  },
+      {
+    "id": 6,
+    "title": "Space Quiz",
+    "description": "AstroClub AU Collab Quizzers Sundae Set - Aug 24 2025",
+    "category": "Science",
+    "questions": 10,
+    "downloadUrl": "https://www.instagram.com/p/DNuebJUZFcl/?img_index=1"
+  }
+]
