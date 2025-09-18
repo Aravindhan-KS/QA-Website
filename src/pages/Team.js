@@ -302,34 +302,6 @@ const Team = () => {
             <div className="text-dark-text-secondary">Total Members</div>
           </div>
         </div>
-<<<<<<< HEAD
-
-        {/* Join Us Section */}
-        <div className="bg-gradient-to-r from-dark-surface to-dark-card rounded-lg border border-dark-border p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-dark-text">Want to Join Our Team?</h2>
-          <p className="text-xl mb-6 text-dark-text-secondary">
-            We're always looking for passionate individuals who share our love for knowledge and quizzing. 
-            Join us and be part of an amazing community!
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/contact"
-              className="bg-accent-yellow text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors duration-200"
-            >
-              Get in Touch
-            </a>
-            <a 
-              href="https://www.instagram.com/cegquizclub"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-accent-cyan text-accent-cyan px-8 py-3 rounded-lg font-semibold hover:bg-accent-cyan hover:text-black transition-colors duration-200"
-            >
-              Follow Us
-            </a>
-          </div>
-        </div>
-=======
->>>>>>> 3b0f3e5ccbdd701c7b6ecd1ebaf339e25b40eb90
       </div>
     </div>
   );
