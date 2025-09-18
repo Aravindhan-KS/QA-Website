@@ -11,11 +11,13 @@ import Team from './pages/Team';
 import Contact from './pages/Contact';
 import './App.css';
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
     <Router>
       <SpeedInsights />
+      <Analytics />
       <div className="App min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
