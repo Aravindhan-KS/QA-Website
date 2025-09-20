@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden">
       {/* Global grain overlay */}
       <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
 
@@ -102,45 +102,50 @@ const Contact = () => {
 
         </div>
 
-        {/* Reach Out Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-          {[
-            {
-              title: "Enquiry and Suggestions",
-              text: "Have something to let us know or do you want to know something about us? Click the button below!",
-              link: "https://forms.gle/X2cA1tWy9Fgroknr7",
-              color: "bg-gradient-to-r from-green-500 to-green-700"
-            },
-            {
-              title: "Alumni",
-              text: "Were you part of the QA Fam during your college days? We would love to get in touch with you!",
-              link: "https://forms.gle/dGmWYF13DzBW38mN7",
-              color: "bg-gradient-to-r from-blue-500 to-blue-700"
-            },
-            {
-              title: "Something Fun",
-              text: "Are you bored? Click here to watch something interesting and fun!",
-              link: "https://youtu.be/xvFZjo5PgG0?si=T1aNYOUiu4Dxgw0Y",
-              color: "bg-gradient-to-r from-yellow-400 to-yellow-600"
-            }
-          ].map((card, idx) => (
-            <div
-              key={idx}
-              className={`border border-white/10 rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300 ${card.color} text-white`}
-            >
-              <h3 className="text-xl font-semibold mb-3">{card.title}</h3>
-              <p className="mb-6">{card.text}</p>
-              <a 
-                href={card.link} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg transition-colors"
-              >
-                Click Here
-              </a>
+    {/* Reach Out Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+        {[
+          {
+            title: "Enquiry and Suggestions",
+            text: "Have something to let us know or do you want to know something about us? Click the button below!",
+            link: "https://forms.gle/X2cA1tWy9Fgroknr7",
+            iconBg: "bg-accent-green",
+            shadowColor: "shadow-accent-green/30"
+          },
+          {
+            title: "Alumni",
+            text: "Were you part of the QA Fam during your college days? We would love to get in touch with you!",
+            link: "https://forms.gle/dGmWYF13DzBW38mN7",
+            iconBg: "bg-accent-blue",
+            shadowColor: "shadow-accent-blue/30"
+          },
+          {
+            title: "Something Fun",
+            text: "Are you bored? Click here to watch something interesting and fun!",
+            link: "https://youtu.be/xvFZjo5PgG0?si=T1aNYOUiu4Dxgw0Y",
+            iconBg: "bg-accent-yellow",
+            shadowColor: "shadow-accent-yellow/30"
+          }
+        ].map((card, idx) => (
+          <a
+            key={idx}
+            href={card.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`group bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-lg 
+                      hover:bg-white/20 ${card.shadowColor} transition-all duration-300 transform hover:-translate-y-2 text-white`}
+          >
+            <div className={`w-12 h-12 ${card.iconBg} rounded-lg flex items-center justify-center mb-4`}>
+              <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+              </svg>
             </div>
-          ))}
-        </div>
+            <h3 className="text-xl font-semibold text-white mb-2">{card.title}</h3>
+            <p className="text-gray-300 mb-4">{card.text}</p>
+          </a>
+        ))}
+      </div>
+
 
       </div>
     </div>

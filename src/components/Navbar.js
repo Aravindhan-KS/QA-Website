@@ -31,7 +31,7 @@ const Navbar = () => {
                 alt="Quizzers Anonymous Logo"
                 className="w-8 h-8 rounded-full object-cover"
               />
-              <span className="font-bold text-xl text-white drop-shadow-md">Quizzers Anonymous</span>
+              <span className="font-bold text-xl text-white drop-shadow-md" style={{ fontFamily: "'Honk', cursive" }}>Quizzers Anonymous</span>
             </Link>
 
             {/* Desktop Navigation */}

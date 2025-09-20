@@ -50,7 +50,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden py-8">
+    <div className="min-h-screen relative overflow-hidden py-8">
       {/* Global grain overlay */}
       <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
 

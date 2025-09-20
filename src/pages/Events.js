@@ -15,7 +15,7 @@ const Events = () => {
   );
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div>
       {/* Global grain overlay */}
       <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
 

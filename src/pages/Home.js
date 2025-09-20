@@ -4,7 +4,7 @@ import BouncingLogo from '../components/BouncingLogo';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div>
       {/* Global grain overlay */}
       <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
 
@@ -19,7 +19,7 @@ const Home = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fadeIn z-20">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-            Welcome to <span className="text-accent-cyan">Quizzers Anonymous</span>
+            Welcome to <span className="text-accent-cyan" style={{ fontFamily: "'Honk', cursive" }}>Quizzers Anonymous</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-400 max-w-3xl mx-auto animate-slideUp">
             The official quiz club of College of Engineering Guindy, where curiosity meets competition 

@@ -20,7 +20,7 @@ const QuizSets = () => {
   const categories = [...new Set(quizSets.map(set => set.category))].length;
 
   return (
-    <div className="min-h-screen bg-black py-8 relative overflow-hidden">
+    <div className="min-h-screen py-8 relative overflow-hidden">
       {/* Global grain overlay */}
       <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
 

@@ -9,6 +9,7 @@ import Articles from './pages/Articles';
 import Gallery from './pages/Gallery';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
+import PageWrapper from './components/PageWrapper';
 import './App.css';
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from '@vercel/analytics/react';
@@ -20,17 +21,17 @@ function App() {
       <Analytics />
       <div className="App min-h-screen flex flex-col">
         <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/quiz-sets" element={<QuizSets />} />
-            <Route path="/articles" element={<Articles />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
+              <Route path="/events" element={<PageWrapper><Events /></PageWrapper>} />
+              <Route path="/quiz-sets" element={<PageWrapper><QuizSets /></PageWrapper>} />
+              <Route path="/articles" element={<PageWrapper><Articles /></PageWrapper>} />
+              <Route path="/gallery" element={<PageWrapper><Gallery /></PageWrapper>} />
+              <Route path="/team" element={<PageWrapper><Team /></PageWrapper>} />
+              <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
+            </Routes>
+          </main>
         <Footer />
       </div>
     </Router>
