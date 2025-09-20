@@ -133,43 +133,43 @@ const Contact = () => {
             
             {/* Card 1 */}
             <div className="bg-dark-card border border-dark-border rounded-xl p-6 text-center shadow-lg">
-              <h3 className="text-xl font-semibold text-dark-text mb-3">Join Our Team</h3>
+              <h3 className="text-xl font-semibold text-dark-text mb-3">Enquiry and Suggestions</h3>
               <p className="text-dark-text-secondary mb-6">
-                Interested in being a part of Quizzers Anonymous? Reach out and become a member.
+                Have something to let us know or do you want to know something about us? Click the button below!
               </p>
               <a 
-                href="#membership"
+                href="https://forms.gle/X2cA1tWy9Fgroknr7"
                 className="inline-block bg-accent-blue text-white px-5 py-2 rounded-lg hover:bg-blue-600 transition-colors"
               >
-                Apply Now
+                Enquire
               </a>
             </div>
 
             {/* Card 2 */}
             <div className="bg-dark-card border border-dark-border rounded-xl p-6 text-center shadow-lg">
-              <h3 className="text-xl font-semibold text-dark-text mb-3">Collaborations</h3>
+              <h3 className="text-xl font-semibold text-dark-text mb-3">Alumni</h3>
               <p className="text-dark-text-secondary mb-6">
-                Partner with us for exciting quiz events and academic initiatives.
+                Were you part of the QA Fam during your college days? We would love to get in touch with you!
               </p>
               <a 
-                href="#collaborate"
+                href="https://forms.gle/dGmWYF13DzBW38mN7"
                 className="inline-block bg-accent-blue text-white px-5 py-2 rounded-lg hover:bg-blue-600 transition-colors"
               >
-                Collaborate
+                Reach Out
               </a>
             </div>
 
             {/* Card 3 */}
             <div className="bg-dark-card border border-dark-border rounded-xl p-6 text-center shadow-lg">
-              <h3 className="text-xl font-semibold text-dark-text mb-3">Event Inquiry</h3>
+              <h3 className="text-xl font-semibold text-dark-text mb-3">Something Fun</h3>
               <p className="text-dark-text-secondary mb-6">
-                Have questions about our upcoming quiz competitions? We’ve got you covered.
+                Are you bored? Click here to watch something interesting and fun! 
               </p>
               <a 
-                href="#events"
+                href="https://youtu.be/xvFZjo5PgG0?si=T1aNYOUiu4Dxgw0Y"
                 className="inline-block bg-accent-blue text-white px-5 py-2 rounded-lg hover:bg-blue-600 transition-colors"
               >
-                Ask Us
+                Fun
               </a>
             </div>
 

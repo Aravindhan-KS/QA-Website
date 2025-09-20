@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "The Evolution of Quiz Culture in India",
+    "excerpt": "Explore how quiz competitions have grown from simple school contests to national phenomena, shaping intellectual culture across the country.",
+    "author": "Rajesh Kumar",
+    "date": "2025-01-20",
+    "readTime": "8 min read",
+    "category": "Culture",
+    "image": "/api/placeholder/400/250"
+  },
+  {
+    "id": 2,
+    "title": "Mastering the Art of Quick Recall",
+    "excerpt": "Learn effective techniques and strategies to improve your memory and recall speed for quiz competitions and knowledge retention.",
+    "author": "Priya Sharma",
+    "date": "2025-01-15",
+    "readTime": "6 min read",
+    "category": "Tips & Tricks",
+    "image": "/api/placeholder/400/250"
+  },
+  {
+    "id": 3,
+    "title": "Technology Trends Shaping 2025",
+    "excerpt": "Stay ahead of the curve with insights into artificial intelligence, quantum computing, and other breakthrough technologies.",
+    "author": "Arjun Patel",
+    "date": "2025-01-10",
+    "readTime": "10 min read",
+    "category": "Technology",
+    "image": "/api/placeholder/400/250"
+  },
+  {
+    "id": 4,
+    "title": "The Psychology Behind Effective Learning",
+    "excerpt": "Understand the cognitive processes that make learning more effective and how to apply them in your quiz preparation.",
+    "author": "Dr. Meera Gupta",
+    "date": "2025-01-05",
+    "readTime": "12 min read",
+    "category": "Education",
+    "image": "/api/placeholder/400/250"
+  },
+  {
+    "id": 5,
+    "title": "Famous Quiz Masters and Their Legacy",
+    "excerpt": "A tribute to the legendary quiz masters who have inspired generations of quiz enthusiasts across India and beyond.",
+    "author": "Vikram Singh",
+    "date": "2024-12-28",
+    "readTime": "9 min read",
+    "category": "Personalities",
+    "image": "/api/placeholder/400/250"
+  },
+  {
+    "id": 6,
+    "title": "Building Confidence for Public Speaking",
+    "excerpt": "Essential tips for overcoming stage fright and presenting your answers confidently during quiz competitions.",
+    "author": "Sneha Reddy",
+    "date": "2024-12-20",
+    "readTime": "7 min read",
+    "category": "Self-Improvement",
+    "image": "/api/placeholder/400/250"
+  }
+]

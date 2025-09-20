@@ -57,16 +57,23 @@
   },
         {
     "id": 9,
-    "src": "/media/pictures/gallery/9.png",
+    "src": "/media/pictures/gallery/9.jpg",
     "caption": "Loki Quiz and Coolie Discussion",
     "category": "events",
     "year": 2025
   },
         {
     "id": 10,
-    "src": "/media/pictures/gallery/10.png",
+    "src": "/media/pictures/gallery/10.jpg",
     "caption": "Loki Quiz and Coolie Discussion",
     "category": "events",
+    "year": 2025
+  },
+          {
+    "id": 11,
+    "src": "/media/pictures/gallery/11.jpeg",
+    "caption": "Team QA at the Zifo Open Quiz 2025",
+    "category": "team",
     "year": 2025
   }
 ]

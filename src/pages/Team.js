@@ -1,233 +1,9 @@
 import React from 'react';
 import MemberCard from '../components/MemberCard';
+import teamData from '../data/team.json';
 
 const Team = () => {
-  // Team members organized by hierarchy
-  const heads = [
-    {
-      id: 1,
-      name: "Jaison Jecinth Vincent",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/jaison.png",
-      designation: "President",
-      year: "3rd Year",
-      department: "Computer Science Engineering"
-    },
-    {
-      id: 2,
-      name: "Visvam Srinivasan",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/visvam.png",
-      designation: "Vice President",
-      year: "3rd Year",
-      department: "Computer Science Engineering"
-    },
-    {
-      id: 3,
-      name: "Mikul Ramesh",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/mikul.png",
-      designation: "Co-Heads of Curation",
-      year: "4th Year",
-      department: "Mechanical Engineering",
-    },
-    {
-      id: 4,
-      name: "Akash P S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/akash.png",
-      designation: "Co-Heads of Curation",
-      year: "4th Year",
-      department: "Mechanical Engineering",
-    },
-    {
-      id: 5,
-      name: "Girish Sai D",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/girish.png",
-      designation: "Co-Heads of Curation",
-      year: "4th Year",
-      department: "Information technology",
-    },
-     {
-      id: 6,
-      name: "Manoranjan U",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/mano.png",
-      designation: "Head of Operations",
-      year: "3rd Year",
-      department: "Electronics & Communication Engineering",
-    },
-     {
-      id: 7,
-      name: "Sasi Kiran L",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/sasi.png",
-      designation: "Co-Heads of Marketing",
-      year: "3rd Year",
-      department: "Computer Science Engineering",
-    },
-     {
-      id: 8,
-      name: "Shushmita K",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/sushmitha.png",
-      designation: "Co-Heads of Marketing",
-      year: "3rd Year",
-      department: "Biomedical Engineering",
-    },
-     {
-      id: 9,
-      name: "Mohamed Jasim J",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/jasim.png",
-      designation: "Head of Contents",
-      year: "3rd Year",
-      department: "Computer Science Engineering",
-    },
-     {
-      id: 10,
-      name: "Sudarshan V",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/Heads/sudharshan.png",
-      designation: "Head of Design",
-      year: "3rd Year",
-      department: "Electronics & Communication Engineering",
-    },
-  ];
-
-  const seniorCoordinators = [
-    {
-      id: 11,
-      name: "Abhishek S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/abhishek.png",
-      designation: "Operations",
-      year: "3rd Year",
-      department: "Computer Science Engineering",
-    },
-    {
-      id: 12,
-      name: "Manesh Ram",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/manesh.png",
-      designation: "Operations",
-      year: "3rd Year",
-      department: "Computer Science Engineering",
-    },
-    {
-      id: 13,
-      name: "Ragotma",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/ragotma.png",
-      designation: "Operations",
-      year: "3rd Year",
-      department: "Computer Science Engineering",
-    },
-    {
-      id: 14,
-      name: "Samyuktha Venkatasamy",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/samyuktha.png",
-      designation: "Operations",
-      year: "3rd Year",
-      department: "Industrial Engineering",
-    },
-    {
-      id: 15,
-      name: "Jeffrey Samuel Raj P",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/Jeffrey.png",
-      designation: "Marketing",
-      year: "3rd Year",
-      department: "Electronics & Communication Engineering",
-    },
-    {
-      id: 16,
-      name: "Parthasarathi N S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/parthasarathy.png",
-      designation: "Contents",
-      year: "2nd Year",
-      department: "Medical Physics",
-    },
-    {
-      id: 17,
-      name: "Suvi Sharon",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/suvi.png",
-      designation: "Contents",
-      year: "3rd Year",
-      department: "Computer Science Engineering",
-    },
-    {
-      id: 18,
-      name: "Nagarajan S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/nagarajan.png",
-      designation: "Design",
-      year: "3rd Year",
-      department: "Mechanical Engineering",
-    },
-    {
-      id: 19,
-      name: "Roshon R",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/roshon.png",
-      designation: "Design",
-      year: "3rd Year",
-      department: "Biomedical Engineering",
-    },
-    {
-      id: 20,
-      name: "A Mohammed Saalih",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/saalih.png",
-      designation: "Design",
-      year: "3rd Year",
-      department: "Computer Science Engineering",
-    },
-    {
-      id: 21,
-      name: "Aravindhan S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/SCs/aravindhan.png",
-      designation: "Tech",
-      year: "3rd Year",
-      department: "Computer Science Engineering",
-    },
-  ];
-
-  const juniorCoordinators = [
-    {
-      id: 22,
-      name: "Arunprasath M",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/arunprasath.png",
-      designation: "Operations",
-      year: "2nd Year",
-      department: "Mechanical Engineering",
-    },
-    {
-      id: 23,
-      name: "Srivishnu Rajkrishna",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/shrivishnu.png",
-      designation: "Marketing",
-      year: "2nd Year",
-      department: "Computer Science Engineering",
-    },
-    {
-      id: 24,
-      name: "Sachin C K S",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/sachin.png",
-      designation: "Contents",
-      year: "2nd Year",
-      department: "Mechanical Engineering",
-    },
-    {
-      id: 25,
-      name: "Kaviya",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/kaviya.png",
-      designation: "Design",
-      year: "2nd Year",
-      department: "Computer Science Engineering",
-    },
-    {
-      id: 26,
-      name: "Ramkumar R",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/ramkumar.png",
-      designation: "Design",
-      year: "2nd Year",
-      department: "Mechanical Engineering",
-    },
-    {
-      id: 27,
-      name: "Sujitha",
-      photo: "https://8hyelfuh7tofazza.public.blob.vercel-storage.com/JCs/sujitha.png",
-      designation: "Design",
-      year: "2nd Year",
-      department: "Electrical & Communication Engineering",
-    }
-  ];
-
+  const { heads, seniorCoordinators, juniorCoordinators } = teamData;
   const allMembers = [...heads, ...seniorCoordinators, ...juniorCoordinators];
 
   return (
@@ -247,10 +23,9 @@ const Team = () => {
             <h2 className="text-3xl font-bold text-dark-text mb-4">Heads</h2>
             <div className="w-24 h-1 bg-accent-yellow mx-auto"></div>
           </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {heads.map((member) => (
-              <MemberCard key={member.id} member={member} />
+              <MemberCard key={member.id} member={member} role="head" />
             ))}
           </div>
         </div>
@@ -261,10 +36,9 @@ const Team = () => {
             <h2 className="text-3xl font-bold text-dark-text mb-4">Senior Coordinators</h2>
             <div className="w-24 h-1 bg-accent-blue mx-auto"></div>
           </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {seniorCoordinators.map((member) => (
-              <MemberCard key={member.id} member={member} />
+              <MemberCard key={member.id} member={member} role="senior" />
             ))}
           </div>
         </div>
@@ -275,10 +49,9 @@ const Team = () => {
             <h2 className="text-3xl font-bold text-dark-text mb-4">Junior Coordinators</h2>
             <div className="w-24 h-1 bg-accent-green mx-auto"></div>
           </div>
-          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {juniorCoordinators.map((member) => (
-              <MemberCard key={member.id} member={member} />
+              <MemberCard key={member.id} member={member} role="junior" />
             ))}
           </div>
         </div>
