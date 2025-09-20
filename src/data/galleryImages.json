@@ -54,5 +54,19 @@
     "caption": "The Big Fat Fandom Quiz - Litablaze 2024",
     "category": "events",
     "year": 2024
+  },
+        {
+    "id": 9,
+    "src": "/media/pictures/gallery/9.png",
+    "caption": "Loki Quiz and Coolie Discussion",
+    "category": "events",
+    "year": 2025
+  },
+        {
+    "id": 10,
+    "src": "/media/pictures/gallery/10.png",
+    "caption": "Loki Quiz and Coolie Discussion",
+    "category": "events",
+    "year": 2025
   }
 ]
