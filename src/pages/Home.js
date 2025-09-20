@@ -86,11 +86,17 @@ const Home = () => {
           <div className="space-y-8">
             {/* Instagram Feed using react-social-media-embed */}
             <div className="bg-dark-card rounded-lg shadow-md border border-dark-border p-6">
-              <h3 className="text-xl font-semibold text-dark-text mb-6 text-center">Latest Post</h3>
-              <div className="flex justify-center mb-6">
-                <InstagramPostEmbed url="https://www.instagram.com/p/DM-oLOizDzC/" />
-                <InstagramPostEmbed url="https://www.instagram.com/p/DMAe-fcSvCb/" />
-                <InstagramPostEmbed url="https://www.instagram.com/p/DMAdi9YynBn/" />
+              <h3 className="text-xl font-semibold text-dark-text mb-6 text-center">Latest Posts</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 max-w-full overflow-hidden">
+                <div className="flex justify-center">
+                  <InstagramPostEmbed url="https://www.instagram.com/p/DM-oLOizDzC/" />
+                </div>
+                <div className="flex justify-center">
+                  <InstagramPostEmbed url="https://www.instagram.com/p/DMAe-fcSvCb/" />
+                </div>
+                <div className="flex justify-center">
+                  <InstagramPostEmbed url="https://www.instagram.com/p/DMAdi9YynBn/" />
+                </div>
               </div>
               <div className="text-center">
                 <a 
