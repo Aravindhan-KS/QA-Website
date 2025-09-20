@@ -1,30 +1,42 @@
 import React from 'react';
 import InstagramPostEmbed from '../components/InstagramPostEmbed';
+import BouncingLogo from '../components/BouncingLogo';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-dark-bg">
+    <div className="min-h-screen bg-black relative overflow-hidden">
+      {/* Global grain overlay */}
+      <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
+
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-dark-surface to-dark-bg text-dark-text py-20">
-        <div className="absolute inset-0 bg-grain opacity-20"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-black via-neutral-900 to-black text-white py-20 overflow-hidden">
+        {/* Grain overlay */}
+        <div className="absolute inset-0 bg-grain opacity-20 pointer-events-none"></div>
+
+        {/* Bouncing Logo */}
+        <BouncingLogo />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fadeIn z-20">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
             Welcome to <span className="text-accent-cyan">Quizzers Anonymous</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-dark-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 text-gray-400 max-w-3xl mx-auto animate-slideUp">
             The official quiz club of College of Engineering Guindy, where curiosity meets competition 
             and knowledge knows no bounds.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="/events" 
-              className="bg-accent-cyan text-dark-bg px-8 py-3 rounded-lg font-semibold hover:bg-cyan-300 transition-colors duration-200"
+              className="bg-white/10 backdrop-blur-lg text-accent-cyan px-8 py-3 rounded-xl font-semibold shadow-lg 
+              hover:bg-white/20 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
             >
               Explore Events
             </a>
             <a 
               href="/team" 
-              className="border-2 border-accent-blue text-accent-blue px-8 py-3 rounded-lg font-semibold hover:bg-accent-blue hover:text-white transition-colors duration-200"
+              className="bg-white/10 backdrop-blur-lg border border-white/20 text-accent-blue px-8 py-3 rounded-xl font-semibold 
+              hover:bg-white/20 hover:text-white transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
             >
               Meet the Team
             </a>
@@ -32,69 +44,74 @@ const Home = () => {
         </div>
       </section>
 
+
       {/* About Section */}
-      <section className="py-16 bg-dark-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grain opacity-10 pointer-events-none"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-dark-text mb-6">About Quizzers Anonymous</h2>
-              <p className="text-dark-text-secondary mb-4">
+            <div className="animate-fadeIn space-y-6">
+              <h2 className="text-3xl font-bold text-white">About Quizzers Anonymous</h2>
+              <p className="text-gray-300">
                 Founded as the premier quiz club of College of Engineering Guindy, Anna University, 
                 Quizzers Anonymous has been fostering a culture of learning and intellectual curiosity 
                 for years. We believe that questioning is the beginning of wisdom.
               </p>
-              <p className="text-dark-text-secondary mb-6">
+              <p className="text-gray-300">
                 Our club organizes regular quiz competitions, knowledge-sharing sessions, and hosts 
                 some of the most prestigious quiz events in Chennai. From literature to science, 
                 sports to entertainment, we cover it all.
               </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-dark-card rounded-lg border border-dark-border">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg 
+                hover:shadow-accent-cyan/30 transform hover:-translate-y-1 transition-all duration-300">
                   <div className="text-2xl font-bold text-accent-cyan">50+</div>
-                  <div className="text-sm text-dark-text-secondary">Events Conducted</div>
+                  <div className="text-sm text-gray-300">Events Conducted</div>
                 </div>
-                <div className="text-center p-4 bg-dark-card rounded-lg border border-dark-border">
+                <div className="text-center bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg 
+                hover:shadow-accent-cyan/30 transform hover:-translate-y-1 transition-all duration-300">
                   <div className="text-2xl font-bold text-accent-cyan">1000+</div>
-                  <div className="text-sm text-dark-text-secondary">Participants</div>
+                  <div className="text-sm text-gray-300">Participants</div>
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative group animate-slideUp">
               <img
                 src="/api/placeholder/500/400"
                 alt="Quiz event"
-                className="rounded-lg shadow-lg w-full"
+                className="rounded-xl shadow-lg w-full transform transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-grain opacity-5 rounded-lg"></div>
+              <div className="absolute inset-0 bg-white/5 backdrop-blur-md rounded-xl"></div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Horizontal Divider between About and Instagram Feed */}
+      <div className="border-t border-white/10 my-6"></div>
+
       {/* Instagram Feed Section */}
-      <section className="py-16 bg-dark-bg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-dark-text mb-4">Follow Our Journey</h2>
-            <p className="text-dark-text-secondary max-w-2xl mx-auto">
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grain opacity-10 pointer-events-none"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 animate-fadeIn">
+            <h2 className="text-3xl font-bold text-white mb-4">Follow Our Journey</h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
               Stay updated with our latest events, achievements, and memorable moments. 
               Follow us on Instagram for daily updates and behind-the-scenes content.
             </p>
           </div>
-          
-          {/* Instagram Feed - Multiple Embedding Methods */}
           <div className="space-y-8">
-            {/* Instagram Feed using react-social-media-embed */}
-            <div className="bg-dark-card rounded-lg shadow-md border border-dark-border p-6">
-              <h3 className="text-xl font-semibold text-dark-text mb-6 text-center">Latest Posts</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6 max-w-full overflow-hidden">
-                <div className="flex justify-center">
+            <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg animate-slideUp">
+              <h3 className="text-xl font-semibold text-white mb-6 text-center">Latest Posts</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                <div className="flex justify-center hover:scale-105 transition-transform duration-300">
                   <InstagramPostEmbed url="https://www.instagram.com/p/DM-oLOizDzC/" />
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center hover:scale-105 transition-transform duration-300">
                   <InstagramPostEmbed url="https://www.instagram.com/p/DMAe-fcSvCb/" />
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center hover:scale-105 transition-transform duration-300">
                   <InstagramPostEmbed url="https://www.instagram.com/p/DMAdi9YynBn/" />
                 </div>
               </div>
@@ -103,11 +120,9 @@ const Home = () => {
                   href="https://www.instagram.com/cegquizclub" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-200 transform hover:scale-105"
+                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-xl 
+                  hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
                 >
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                  </svg>
                   <span>Follow @cegquizclub</span>
                 </a>
               </div>
@@ -116,58 +131,68 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Horizontal Divider between Instagram Feed and Quick Links */}
+      <div className="border-t border-white/10 my-6"></div>
+
       {/* Quick Links Section */}
-      <section className="py-16 bg-dark-bg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-dark-text mb-4">Explore More</h2>
-            <p className="text-dark-text-secondary max-w-2xl mx-auto">
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grain opacity-10 pointer-events-none"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 animate-fadeIn">
+            <h2 className="text-3xl font-bold text-white mb-4">Explore More</h2>
+            <p className="text-gray-300 max-w-2xl mx-auto">
               Discover our events, browse quiz sets, read articles, and get to know our amazing team.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-slideUp">
+            {/* Event Card */}
             <a 
               href="/events"
-              className="group p-6 bg-dark-card rounded-lg hover:bg-dark-hover border border-dark-border transition-colors duration-200"
+              className="group bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-lg 
+              hover:bg-white/20 hover:shadow-accent-yellow/30 transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="w-12 h-12 bg-accent-yellow rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200">
+              <div className="w-12 h-12 bg-accent-yellow rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-dark-text mb-2">Upcoming Events</h3>
-              <p className="text-dark-text-secondary">Join our exciting quiz competitions and knowledge-sharing sessions.</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Upcoming Events</h3>
+              <p className="text-gray-300">Join our exciting quiz competitions and knowledge-sharing sessions.</p>
             </a>
-            
+
+            {/* Quiz Sets Card */}
             <a 
               href="/quiz-sets"
-              className="group p-6 bg-dark-card rounded-lg hover:bg-dark-hover border border-dark-border transition-colors duration-200"
+              className="group bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-lg 
+              hover:bg-white/20 hover:shadow-accent-blue/30 transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200">
+              <div className="w-12 h-12 bg-accent-blue rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-dark-text mb-2">Quiz Sets</h3>
-              <p className="text-dark-text-secondary">Practice with our curated collection of quiz questions.</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Quiz Sets</h3>
+              <p className="text-gray-300">Practice with our curated collection of quiz questions.</p>
             </a>
-            
+
+            {/* Gallery Card */}
             <a 
               href="/gallery"
-              className="group p-6 bg-dark-card rounded-lg hover:bg-dark-hover border border-dark-border transition-colors duration-200"
+              className="group bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-lg 
+              hover:bg-white/20 hover:shadow-accent-green/30 transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="w-12 h-12 bg-accent-green rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-200">
+              <div className="w-12 h-12 bg-accent-green rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-dark-text mb-2">Gallery</h3>
-              <p className="text-dark-text-secondary">Relive the memorable moments from our events and activities.</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Gallery</h3>
+              <p className="text-gray-300">Relive the memorable moments from our events and activities.</p>
             </a>
           </div>
         </div>
       </section>
+
     </div>
   );
 };

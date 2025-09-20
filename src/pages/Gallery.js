@@ -23,7 +23,6 @@ const Gallery = () => {
   ];
 
   // Apply both filters
-  // Apply both filters
   const filteredImages = images
     .filter(img => {
       const categoryMatch = filter === 'all' || img.category === filter;
@@ -31,12 +30,9 @@ const Gallery = () => {
       return categoryMatch && yearMatch;
     })
     .sort((a, b) => {
-      // First sort by year (descending = newer first)
       if (b.year !== a.year) return b.year - a.year;
-      // If years are the same, sort by id (descending = newer uploads first)
       return b.id - a.id;
     });
-
 
   const openModal = (image) => setSelectedImage(image);
   const closeModal = () => setSelectedImage(null);
@@ -54,20 +50,21 @@ const Gallery = () => {
   };
 
   return (
-    <div className="min-h-screen bg-dark-bg py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+    <div className="min-h-screen bg-black relative overflow-hidden py-8">
+      {/* Global grain overlay */}
+      <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-dark-text mb-4">Gallery</h1>
-          <p className="text-xl text-dark-text-secondary max-w-3xl mx-auto">
+          <h1 className="text-4xl font-bold text-white mb-4">Gallery</h1>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             The Memories of Quizzing.
           </p>
         </div>
 
-    
-        <br></br>
-
+        <div className="border-t border-white/10 my-6"></div>
 
         {/* Year Filters */}
         <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -75,11 +72,11 @@ const Gallery = () => {
             <button
               key={year.id}
               onClick={() => setYearFilter(year.id)}
-              className={`px-6 py-3 rounded-lg font-medium transition-colors duration-200 ${
-                yearFilter === year.id
-                  ? 'bg-accent-green text-white'
-                  : 'bg-dark-card text-dark-text border border-dark-border hover:bg-dark-hover'
-              }`}
+              className={`px-6 py-3 rounded-xl font-medium transition-all duration-200 backdrop-blur-lg border border-white/20 
+                ${yearFilter === year.id
+                  ? 'bg-accent-cyan text-black'
+                  : 'bg-white/10 text-white hover:bg-white/20'}`
+              }
             >
               {year.name} ({year.count})
             </button>
@@ -87,10 +84,19 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredImages.map((image) => (
-            <div key={image.id} className="aspect-square">
-              <GalleryImage image={image} onClick={openModal} />
+            <div
+              key={image.id}
+              className="relative rounded-xl overflow-hidden bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg hover:shadow-accent-cyan/40 transform hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+              onClick={() => openModal(image)}
+            >
+              <GalleryImage image={image} />
+              {image.caption && (
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                  <p className="text-white text-sm text-center truncate">{image.caption}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -99,11 +105,12 @@ const Gallery = () => {
         {selectedImage && (
           <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
             <div className="relative max-w-4xl max-h-full">
+
               {/* Close */}
               <button
                 onClick={closeModal}
                 className="absolute top-4 right-4 text-white hover:text-gray-300 z-10 
-                          w-12 h-12 flex items-center justify-center rounded-full bg-black bg-opacity-40"
+                           w-12 h-12 flex items-center justify-center rounded-full bg-black bg-opacity-40"
               >
                 <span className="text-3xl font-bold">✕</span>
               </button>
@@ -112,7 +119,7 @@ const Gallery = () => {
               <button
                 onClick={prevImage}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white 
-                          hover:text-gray-300 z-10 w-14 h-14 flex items-center justify-center rounded-full bg-black bg-opacity-40"
+                           hover:text-gray-300 z-10 w-14 h-14 flex items-center justify-center rounded-full bg-black bg-opacity-40"
               >
                 <span className="text-4xl">‹</span>
               </button>
@@ -121,22 +128,24 @@ const Gallery = () => {
               <button
                 onClick={nextImage}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white 
-                          hover:text-gray-300 z-10 w-14 h-14 flex items-center justify-center rounded-full bg-black bg-opacity-40"
+                           hover:text-gray-300 z-10 w-14 h-14 flex items-center justify-center rounded-full bg-black bg-opacity-40"
               >
                 <span className="text-4xl">›</span>
               </button>
 
               {/* Image */}
-              <img src={selectedImage.src} alt={selectedImage.caption} className="max-w-full max-h-full object-contain" />
+              <img src={selectedImage.src} alt={selectedImage.caption} className="max-w-full max-h-full object-contain rounded-xl" />
+
               {/* Caption */}
               {selectedImage.caption && (
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
                   <p className="text-white text-center">{selectedImage.caption}</p>
                 </div>
               )}
             </div>
           </div>
         )}
+
       </div>
     </div>
   );
