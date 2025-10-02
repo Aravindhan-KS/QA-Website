@@ -66,7 +66,14 @@ const QuizSets = () => {
                 <div className={`${style.bg} p-4`}>
                   <span className="text-white font-medium">{quizSet.category}</span>
                 </div>
-
+                {/* Quiz Image */}
+                <div className="relative">
+                  <img
+                    src={quizSet.image}
+                    alt={quizSet.title}
+                    className="w-full aspect-[4/5] object-cover"
+                  />
+                </div>
                 {/* Content */}
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-white mb-3">{quizSet.title}</h3>

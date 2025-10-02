@@ -7,14 +7,6 @@ const Gallery = () => {
   const [filter, setFilter] = useState('all');
   const [yearFilter, setYearFilter] = useState('all');
 
-  // Categories
-  const categories = [
-    { id: 'all', name: 'All Photos', count: images.length },
-    { id: 'events', name: 'Events', count: images.filter(img => img.category === 'events').length },
-    { id: 'team', name: 'Team', count: images.filter(img => img.category === 'team').length },
-    { id: 'workshops', name: 'Workshops', count: images.filter(img => img.category === 'workshops').length }
-  ];
-
   // Years
   const years = [
     { id: 'all', name: 'All Years', count: images.length },

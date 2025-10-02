@@ -5,6 +5,7 @@
     "description": "Quizzers Sundae Set - July 21 2025",
     "category": "Entertainment",
     "questions": 7,
+    "image": "/media/pictures/quizsets/superman.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DMYMyb7SlMQ/?img_index=1"
   },
     {
@@ -13,6 +14,7 @@
     "description": "Quizzers Sundae Set - July 27 2025",
     "category": "Sports",
     "questions": 8,
+    "image": "/media/pictures/quizsets/india_v_england.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DMnZ4-fyIn1/?img_index=1"
   },
     {
@@ -21,30 +23,60 @@
     "description": "Litclub AU and QA Collab Quizzers Sundae Set - Aug 3 2025",
     "category": "Arts & Literature",
     "questions": 10,
+    "image": "/media/pictures/quizsets/genz.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DM4ZDZyy1Ex/?img_index=1"
   },
     {
     "id": 4,
     "title": "Quiz on Stage",
-    "description": "Theatron AU Collab Quizzers Sundae Set - Aug 10 2025",
+    "description": "Theatron AU and QA Collab Quizzers Sundae Set - Aug 10 2025",
     "category": "Entertainment",
     "questions": 8,
+    "image": "/media/pictures/quizsets/stage.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DNLJwL1SIqQ/?img_index=1"
   },
       {
     "id": 5,
     "title": "Independence Day Set",
-    "description": "Leo Club CEG Collab Quizzers Sundae Set - Aug 16 2025",
+    "description": "Leo Club CEG and QACollab Quizzers Sundae Set - Aug 16 2025",
     "category": "History & Geography",
     "questions": 10,
+    "image": "/media/pictures/quizsets/independence.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DNa80CkyS1n/?img_index=1"
   },
       {
     "id": 6,
     "title": "Space Quiz",
-    "description": "AstroClub AU Collab Quizzers Sundae Set - Aug 24 2025",
+    "description": "AstroClub AU and QA Collab Quizzers Sundae Set - Aug 24 2025",
     "category": "Science",
     "questions": 10,
+    "image": "/media/pictures/quizsets/space.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DNuebJUZFcl/?img_index=1"
+  },
+      {
+    "id": 7,
+    "title": "Mic Up",
+    "description": "AUP Collab and QA Quizzers Sundae Set - Sept 20 2025",
+    "category": "Arts & Literature",
+    "questions": 8,
+    "image": "/media/pictures/quizsets/micup.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DO05UVBElU_/?img_index=1"
+  },      {
+    "id": 8,
+    "title": "Finance And Entrepreneurship Quiz",
+    "description": "AUSEC Collab and QA Quizzers Sundae Set - Sept 21 2025",
+    "category": "Business",
+    "questions": 7,
+    "image": "/media/pictures/quizsets/finance.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DO3dnlDiP0T/?img_index=1"
+  },
+        {
+    "id": 9,
+    "title": "Technology Quiz",
+    "description": "CSAU and QA Collab Quizzers Sundae Set - Sept 29 2025",
+    "category": "Technology",
+    "questions": 7,
+    "image": "/media/pictures/quizsets/tech.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DPJ_F7aEr8A/?img_index=1"
   }
 ]

@@ -65,8 +65,8 @@ const Home = () => {
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg 
                 hover:shadow-accent-cyan/30 transform hover:-translate-y-1 transition-all duration-300">
-                  <div className="text-2xl font-bold text-accent-cyan">50+</div>
-                  <div className="text-sm text-gray-300">Events Conducted</div>
+                  <div className="text-2xl font-bold text-accent-cyan">10+</div>
+                  <div className="text-sm text-gray-300">Years Of Quizzers Anonymous</div>
                 </div>
                 <div className="text-center bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg 
                 hover:shadow-accent-cyan/30 transform hover:-translate-y-1 transition-all duration-300">
