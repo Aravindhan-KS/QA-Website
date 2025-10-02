@@ -77,11 +77,10 @@ const Home = () => {
             </div>
             <div className="relative group animate-slideUp">
               <img
-                src="/api/placeholder/500/400"
+                src="/media/HomePage.jpg"
                 alt="Quiz event"
                 className="rounded-xl shadow-lg w-full transform transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-white/5 backdrop-blur-md rounded-xl"></div>
             </div>
           </div>
         </div>

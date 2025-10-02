@@ -23,6 +23,26 @@ const Team = () => {
 
         <div className="border-t border-white/10 my-6"></div>
 
+        {/* Team Stats */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
+          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
+            <div className="text-3xl font-bold text-accent-yellow mb-2">{heads.length}</div>
+            <div className="text-gray-300">Heads</div>
+          </div>
+          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
+            <div className="text-3xl font-bold text-accent-blue mb-2">{seniorCoordinators.length}</div>
+            <div className="text-gray-300">Senior Coordinators</div>
+          </div>
+          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
+            <div className="text-3xl font-bold text-accent-green mb-2">{juniorCoordinators.length}</div>
+            <div className="text-gray-300">Junior Coordinators</div>
+          </div>
+          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
+            <div className="text-3xl font-bold text-purple-400 mb-2">{allMembers.length}</div>
+            <div className="text-gray-300">Total Members</div>
+          </div>
+        </div>
+
         {/* Heads Section */}
         <div className="mb-16">
           <div className="text-center mb-8">
@@ -60,26 +80,6 @@ const Team = () => {
             {juniorCoordinators.map((member) => (
               <MemberCard key={member.id} member={member} role="junior" />
             ))}
-          </div>
-        </div>
-
-        {/* Team Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
-          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
-            <div className="text-3xl font-bold text-accent-yellow mb-2">{heads.length}</div>
-            <div className="text-gray-300">Heads</div>
-          </div>
-          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
-            <div className="text-3xl font-bold text-accent-blue mb-2">{seniorCoordinators.length}</div>
-            <div className="text-gray-300">Senior Coordinators</div>
-          </div>
-          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
-            <div className="text-3xl font-bold text-accent-green mb-2">{juniorCoordinators.length}</div>
-            <div className="text-gray-300">Junior Coordinators</div>
-          </div>
-          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
-            <div className="text-3xl font-bold text-purple-400 mb-2">{allMembers.length}</div>
-            <div className="text-gray-300">Total Members</div>
           </div>
         </div>
       </div>
