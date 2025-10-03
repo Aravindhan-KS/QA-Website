@@ -148,15 +148,18 @@ Quiz sets are managed in `src/data/quizSets.json`.
   "description": "Brief description and context",
   "category": "Category Name",
   "questions": 10,
+  "image": "/media/pictures/quizsets/quiz-image.jpeg",
   "downloadUrl": "https://www.instagram.com/p/..." | "https://drive.google.com/..."
 }
 ```
 
 ### Steps to Add Quiz Sets
 
-1. **Open** `src/data/quizSets.json`
-2. **Add your quiz set** with a unique `id`
-3. **Set appropriate category**:
+1. **Upload quiz image** to `public/media/pictures/quizsets/`
+2. **Open** `src/data/quizSets.json`
+3. **Add your quiz set** with a unique `id`
+4. **Add image path** in the `image` field
+5. **Set appropriate category**:
    - `"Entertainment"`
    - `"Sports"`
    - `"Arts & Literature"`
@@ -172,6 +175,7 @@ Quiz sets are managed in `src/data/quizSets.json`.
   "description": "Bollywood and Regional Cinema Quiz - September 2025",
   "category": "Entertainment",
   "questions": 12,
+  "image": "/media/pictures/quizsets/indian-cinema.jpeg",
   "downloadUrl": "https://www.instagram.com/p/DM4ZDZyy1Ex/"
 }
 ```
@@ -187,7 +191,8 @@ public/
     └── pictures/
         ├── events/      # Event posters
         ├── gallery/     # Gallery images
-        └── articles/    # Article images (optional)
+        ├── articles/    # Article images (optional)
+        └── quizsets/    # Quiz set images
 ```
 
 ### Image Guidelines
@@ -198,6 +203,7 @@ public/
    - ❌ `IMG_001.jpg`
 3. **Image Sizes**:
    - **Event posters**: 400x600px recommended
+   - **Quiz set images**: 1080x1080px recommended (square format)
    - **Gallery images**: 800x600px recommended
    - **Article images**: 400x250px recommended
 4. **File Size**: Keep under 1MB for optimal loading
