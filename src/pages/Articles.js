@@ -32,8 +32,10 @@ const Articles = () => {
   // If an article is selected, show detailed view
   if (selectedArticle) {
     return (
-      <div className="min-h-screen bg-dark-bg py-8">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen relative overflow-hidden py-8">
+      {/* Global grain overlay */}
+        <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
           {/* Back button */}
           <button 
             onClick={handleBackToList}
@@ -97,8 +99,10 @@ const Articles = () => {
   }
 
   return (
-    <div className="min-h-screen bg-dark-bg py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen relative overflow-hidden py-8">
+      {/* Global grain overlay */}
+      <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-dark-text mb-4">Articles</h1>
@@ -107,6 +111,8 @@ const Articles = () => {
             From quiz strategies to educational insights, discover content that enhances your learning journey.
           </p>
         </div>
+
+        <div className="border-t border-white/10 my-6"></div>
 
         {/* Featured Article */}
         <div className="mb-12">
@@ -204,27 +210,6 @@ const Articles = () => {
           <button className="bg-accent-blue text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-200">
             Load More Articles
           </button>
-        </div>
-
-        {/* Newsletter Signup */}
-        <div className="mt-16">
-          <div className="bg-dark-card rounded-lg border border-dark-border p-8 max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-dark-text mb-4">Stay Informed</h2>
-            <p className="text-dark-text-secondary mb-6">
-              Subscribe to our newsletter and get the latest articles, quiz tips, and event updates 
-              delivered straight to your inbox.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 border border-dark-border rounded-lg bg-dark-surface text-dark-text placeholder-dark-text-secondary focus:outline-none focus:ring-2 focus:ring-accent-blue focus:border-transparent"
-              />
-              <button className="bg-accent-cyan text-black px-6 py-3 rounded-lg hover:bg-cyan-400 transition-colors duration-200 whitespace-nowrap">
-                Subscribe
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </div>

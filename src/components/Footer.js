@@ -40,7 +40,7 @@ const Footer = () => {
             <h3 className="text-md font-semibold mb-2 text-dark-text">Follow Us</h3>
             <div className="space-y-2 text-sm">
               <a 
-                href="https://mail.google.com/mail/?view=cm&to=quizzersanonymousceg@gmail.com&su=General%20Inquiry"
+                href="&#x68;&#x74;&#x74;&#x70;&#x73;&#x3a;&#x2f;&#x2f;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x67;&#x6f;&#x6f;&#x67;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;&#x2f;&#x6d;&#x61;&#x69;&#x6c;&#x2f;&#x3f;&#x76;&#x69;&#x65;&#x77;&#x3d;&#x63;&#x6d;&#x26;&#x74;&#x6f;&#x3d;&#x71;&#x75;&#x69;&#x7a;&#x7a;&#x65;&#x72;&#x73;&#x61;&#x6e;&#x6f;&#x6e;&#x79;&#x6d;&#x6f;&#x75;&#x73;&#x63;&#x65;&#x67;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&#x26;&#x73;&#x75;&#x3d;&#x47;&#x65;&#x6e;&#x65;&#x72;&#x61;&#x6c;&#x25;&#x32;&#x30;&#x49;&#x6e;&#x71;&#x75;&#x69;&#x72;&#x79;"
                 className="flex items-center space-x-2 text-dark-text-secondary hover:text-accent-blue"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

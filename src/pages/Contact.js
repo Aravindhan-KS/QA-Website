@@ -2,8 +2,11 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-dark-bg py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen relative overflow-hidden py-8">
+      {/* Global grain overlay */}
+      <div className="absolute inset-0 bg-grain opacity-[0.08] pointer-events-none z-0"></div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-dark-text mb-4">Contact Us</h1>
@@ -12,6 +15,8 @@ const Contact = () => {
             We'd love to hear from you. Get in touch using any of the methods below.
           </p>
         </div>
+
+        <div className="border-t border-white/10 my-6"></div>
 
         {/* Contact Information Grid */}
         <div className="max-w-6xl mx-auto">
@@ -46,7 +51,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-dark-text mb-2">Email</h3>
                   <a 
-                    href="mailto:quizzersanonymousceg@gmail.com" 
+                    href="&#x68;&#x74;&#x74;&#x70;&#x73;&#x3a;&#x2f;&#x2f;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x67;&#x6f;&#x6f;&#x67;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#x6d;&#x2f;&#x6d;&#x61;&#x69;&#x6c;&#x2f;&#x3f;&#x76;&#x69;&#x65;&#x77;&#x3d;&#x63;&#x6d;&#x26;&#x74;&#x6f;&#x3d;&#x71;&#x75;&#x69;&#x7a;&#x7a;&#x65;&#x72;&#x73;&#x61;&#x6e;&#x6f;&#x6e;&#x79;&#x6d;&#x6f;&#x75;&#x73;&#x63;&#x65;&#x67;&#x40;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;" 
                     className="text-accent-blue hover:text-blue-400 transition-colors"
                   >
                     quizzersanonymousceg@gmail.com
@@ -125,56 +130,51 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
-        {/* Reach Out Section */}
-        <div className="mt-16">
-          <h2 className="text-3xl font-bold text-center text-dark-text mb-10">Reach Out</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            {/* Card 1 */}
-            <div className="bg-dark-card border border-dark-border rounded-xl p-6 text-center shadow-lg">
-              <h3 className="text-xl font-semibold text-dark-text mb-3">Join Our Team</h3>
-              <p className="text-dark-text-secondary mb-6">
-                Interested in being a part of Quizzers Anonymous? Reach out and become a member.
-              </p>
-              <a 
-                href="#membership"
-                className="inline-block bg-accent-blue text-white px-5 py-2 rounded-lg hover:bg-blue-600 transition-colors"
-              >
-                Apply Now
-              </a>
-            </div>
-
-            {/* Card 2 */}
-            <div className="bg-dark-card border border-dark-border rounded-xl p-6 text-center shadow-lg">
-              <h3 className="text-xl font-semibold text-dark-text mb-3">Collaborations</h3>
-              <p className="text-dark-text-secondary mb-6">
-                Partner with us for exciting quiz events and academic initiatives.
-              </p>
-              <a 
-                href="#collaborate"
-                className="inline-block bg-accent-blue text-white px-5 py-2 rounded-lg hover:bg-blue-600 transition-colors"
-              >
-                Collaborate
-              </a>
-            </div>
-
-            {/* Card 3 */}
-            <div className="bg-dark-card border border-dark-border rounded-xl p-6 text-center shadow-lg">
-              <h3 className="text-xl font-semibold text-dark-text mb-3">Event Inquiry</h3>
-              <p className="text-dark-text-secondary mb-6">
-                Have questions about our upcoming quiz competitions? We’ve got you covered.
-              </p>
-              <a 
-                href="#events"
-                className="inline-block bg-accent-blue text-white px-5 py-2 rounded-lg hover:bg-blue-600 transition-colors"
-              >
-                Ask Us
-              </a>
-            </div>
-
-          </div>
+        <div className="border-t border-white/10 my-6"></div>
+        {/* Reach Out Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+          {[
+            {
+              title: "Enquiry and Suggestions",
+              text: "Have something to let us know or do you want to know something about us? Click the button below!",
+              link: "https://forms.gle/X2cA1tWy9Fgroknr7",
+              iconBg: "bg-accent-green",
+              shadowColor: "shadow-accent-green/30"
+            },
+            {
+              title: "Alumni",
+              text: "Were you part of the QA Fam during your college days? We would love to get in touch with you!",
+              link: "https://forms.gle/dGmWYF13DzBW38mN7",
+              iconBg: "bg-accent-blue",
+              shadowColor: "shadow-accent-blue/30"
+            },
+            {
+              title: "Something Fun",
+              text: "Are you bored? Click here to watch something interesting and fun!",
+              link: "https://youtu.be/xvFZjo5PgG0?si=T1aNYOUiu4Dxgw0Y",
+              iconBg: "bg-accent-yellow",
+              shadowColor: "shadow-accent-yellow/30"
+            }
+          ].map((card, idx) => (
+            <a
+              key={idx}
+              href={card.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-lg 
+                        hover:bg-white/20 ${card.shadowColor} transition-all duration-300 transform hover:-translate-y-2 text-white`}
+            >
+              <div className={`w-12 h-12 ${card.iconBg} rounded-lg flex items-center justify-center mb-4`}>
+                <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-white mb-2">{card.title}</h3>
+              <p className="text-gray-300 mb-4">{card.text}</p>
+            </a>
+          ))}
         </div>
+        
       </div>
     </div>
   );
