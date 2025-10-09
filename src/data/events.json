@@ -7,7 +7,6 @@
     "time": "4:00 PM",
     "venue": "Gmeet",
     "poster": "/media/pictures/events/openguesssr.png",
-    "reportUrl": "https://drive.google.com/file/d/15DhPWp_jVoki5gLBIS7M55gEP0Whbu3O/view?usp=sharing",
     "eventStatus": "completed"
   },
     {
@@ -18,29 +17,56 @@
     "time": "5:00 PM",
     "venue": "Gmeet",
     "poster": "/media/pictures/events/mythQuiz.png",
-    "reportUrl": "https://drive.google.com/file/d/1dh1cOAbNrHQoMlvcQuDSmL61Xvr97lAn/view?usp=sharing",
     "eventStatus": "completed"
   },
     {
-    "id": 1,
+    "id": 3,
     "title": "Lokesh Kanakaraj Quiz and Coolie movie discussion",
     "description": "A quiz on the famed director Loki and a discussion on his then new hyped movie Coolie.",
     "date": "2025-08-23",
     "time": "8:00 PM",
     "venue": "Gmeet",
     "poster": "/media/pictures/events/coolie.png",
-    "reportUrl": "https://drive.google.com/file/d/1bjkfJPzQEpq-4IHHVXQ6shrIHjuBGs75/view?usp=sharing",
     "eventStatus": "completed"
   },
     {
-    "id": 2,
+    "id": 4,
     "title": "Sound Check - Music Quiz",
     "description": "Pop, rap, kutthu paatu, carnatic,.... A Quiz celebrating one of humanity's greatest discovery - Music!",
     "date": "2025-09-22",
     "time": "4:45 PM",
     "venue": "Red Building Room 75",
     "poster": "/media/pictures/events/soundcheck.png",
-    "reportUrl": "",
     "eventStatus": "completed"
+  },
+    {
+    "id": 5,
+    "title": "Icebreaker25's Quiz",
+    "description": "Tick-Tock-Tick-Tock...The ⏰'s ticking, mind's racing, and the fire of the competition is set ablaze.",
+    "date": "2025-10-07",
+    "time": "1:00 PM",
+    "venue": "Red Building Room 75",
+    "poster": "/media/pictures/events/Icebreaker.jpg",
+    "eventStatus": "completed"
+  },
+    {
+    "id": 6,
+    "title": "Arena Sports & Gaming Quiz",
+    "description": "Press X to Trivia 🧠Quizzers Anonymous presents a Sports and gaming quiz for Agni 2025",
+    "date": "2025-10-10",
+    "time": "10:30 AM",
+    "venue": "Red Building Room 75",
+    "poster": "/media/pictures/events/arena.jpg",
+    "eventStatus": "upcoming"
+  },
+    {
+    "id": 7,
+    "title": "Kollywood Quiz",
+    "description": "'arangam adhirum whistle uh parakum eehhh' when Quizzers Anonymous shows up with the much awaited 🎥 KOLLYWOOD QUIZ 🔥🔥",
+    "date": "2025-10-11",
+    "time": "10:30 AM",
+    "venue": "Red Building Room 75",
+    "poster": "/media/pictures/events/kollywood.jpg",
+    "eventStatus": "upcoming"
   }
 ]
