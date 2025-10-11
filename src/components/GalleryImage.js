@@ -4,7 +4,17 @@ const GalleryImage = ({ image, onClick }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    <div className="relative group cursor-pointer overflow-hidden rounded-lg bg-gray-200" onClick={() => onClick(image)}>
+    <button 
+      className="relative group cursor-pointer overflow-hidden rounded-lg bg-gray-200 w-full text-left p-0" 
+      onClick={() => onClick(image)}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          onClick(image);
+        }
+      }}
+      aria-label={`View ${image.caption || 'image'} in full size`}
+    >
       <img
         src={image.src || '/api/placeholder/400/300'}
         alt={image.caption}
@@ -36,7 +46,7 @@ const GalleryImage = ({ image, onClick }) => {
           <p className="text-white text-sm">{image.caption}</p>
         </div>
       )}
-    </div>
+    </button>
   );
 };
 

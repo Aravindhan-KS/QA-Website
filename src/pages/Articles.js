@@ -4,18 +4,6 @@ import articles from '../data/articles.json';
 const Articles = () => {
   const [selectedArticle, setSelectedArticle] = useState(null);
 
-  const getCategoryColor = (category) => {
-    const colors = {
-      'Culture': 'bg-purple-900 text-purple-200',
-      'Tips & Tricks': 'bg-blue-900 text-blue-200',
-      'Technology': 'bg-green-900 text-green-200',
-      'Education': 'bg-orange-900 text-orange-200',
-      'Personalities': 'bg-pink-900 text-pink-200',
-      'Self-Improvement': 'bg-teal-900 text-teal-200'
-    };
-    return colors[category] || 'bg-gray-700 text-gray-200';
-  };
-
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return new Date(dateString).toLocaleDateString('en-US', options);

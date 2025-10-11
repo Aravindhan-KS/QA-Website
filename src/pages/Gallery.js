@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import GalleryImage from '../components/GalleryImage';
 import images from '../data/galleryImages.json';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [filter, setFilter] = useState('all');
   const [yearFilter, setYearFilter] = useState('all');
 
   // Years
@@ -14,12 +12,11 @@ const Gallery = () => {
     { id: '2025', name: '2025', count: images.filter(img => img.year === 2025).length }
   ];
 
-  // Apply both filters
+  // Apply year filter
   const filteredImages = images
     .filter(img => {
-      const categoryMatch = filter === 'all' || img.category === filter;
       const yearMatch = yearFilter === 'all' || img.year.toString() === yearFilter;
-      return categoryMatch && yearMatch;
+      return yearMatch;
     })
     .sort((a, b) => {
       if (b.year !== a.year) return b.year - a.year;
