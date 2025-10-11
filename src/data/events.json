@@ -5,7 +5,7 @@
     "description": "A championship on the Openguessr game - where places have to be guessed with Google Maps.",
     "date": "2025-07-20",
     "time": "4:00 PM",
-    "venue": "Gmeet",
+    "venue": "Google Meet",
     "poster": "/media/pictures/events/openguesssr.png",
     "eventStatus": "completed"
   },
@@ -15,7 +15,7 @@
     "description": "A quiz exploring the myths and legends of the Greek, Romans, Hindu, Islam, Chinese and more!",
     "date": "2025-08-03",
     "time": "5:00 PM",
-    "venue": "Gmeet",
+    "venue": "Google Meet",
     "poster": "/media/pictures/events/mythQuiz.png",
     "eventStatus": "completed"
   },
@@ -25,7 +25,7 @@
     "description": "A quiz on the famed director Loki and a discussion on his then new hyped movie Coolie.",
     "date": "2025-08-23",
     "time": "8:00 PM",
-    "venue": "Gmeet",
+    "venue": "Google Meet",
     "poster": "/media/pictures/events/coolie.png",
     "eventStatus": "completed"
   },
@@ -57,7 +57,7 @@
     "time": "10:30 AM",
     "venue": "Red Building Room 75",
     "poster": "/media/pictures/events/arena.jpg",
-    "eventStatus": "upcoming"
+    "eventStatus": "completed"
   },
     {
     "id": 7,
@@ -67,6 +67,6 @@
     "time": "10:30 AM",
     "venue": "Red Building Room 75",
     "poster": "/media/pictures/events/kollywood.jpg",
-    "eventStatus": "upcoming"
+    "eventStatus": "completed"
   }
 ]
