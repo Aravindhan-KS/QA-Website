@@ -2,80 +2,89 @@
   {
     "id": 1,
     "title": "Superman Set",
-    "description": "Quizzers Sundae Set - July 21 2025",
+    "description": "Quizzers Sundae Set",
     "category": "Entertainment",
     "questions": 7,
+    "date": "2025-07-21",
     "image": "/media/pictures/quizsets/superman.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DMYMyb7SlMQ/?img_index=1"
   },
     {
     "id": 2,
     "title": "India VS England",
-    "description": "Quizzers Sundae Set - July 27 2025",
+    "description": "Quizzers Sundae Set",
     "category": "Sports",
     "questions": 8,
+    "date": "2025-07-27",
     "image": "/media/pictures/quizsets/india_v_england.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DMnZ4-fyIn1/?img_index=1"
   },
     {
     "id": 3,
     "title": "The Ultimate Gen Z Test",
-    "description": "Litclub AU and QA Collab Quizzers Sundae Set - Aug 3 2025",
+    "description": "Litclub AU and QA Collab Quizzers Sundae Set",
     "category": "Arts & Literature",
     "questions": 10,
+    "date": "2025-08-03",
     "image": "/media/pictures/quizsets/genz.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DM4ZDZyy1Ex/?img_index=1"
   },
     {
     "id": 4,
     "title": "Quiz on Stage",
-    "description": "Theatron AU and QA Collab Quizzers Sundae Set - Aug 10 2025",
+    "description": "Theatron AU and QA Collab Quizzers Sundae Set",
     "category": "Entertainment",
     "questions": 8,
+    "date": "2025-08-10",
     "image": "/media/pictures/quizsets/stage.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DNLJwL1SIqQ/?img_index=1"
   },
       {
     "id": 5,
     "title": "Independence Day Set",
-    "description": "Leo Club CEG and QACollab Quizzers Sundae Set - Aug 16 2025",
+    "description": "Leo Club CEG and QACollab Quizzers Sundae Set",
     "category": "History & Geography",
     "questions": 10,
+    "date": "2025-08-16",
     "image": "/media/pictures/quizsets/independence.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DNa80CkyS1n/?img_index=1"
   },
       {
     "id": 6,
     "title": "Space Quiz",
-    "description": "AstroClub AU and QA Collab Quizzers Sundae Set - Aug 24 2025",
+    "description": "AstroClub AU and QA Collab Quizzers Sundae Set",
     "category": "Science",
     "questions": 10,
+    "date": "2025-08-24",
     "image": "/media/pictures/quizsets/space.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DNuebJUZFcl/?img_index=1"
   },
       {
     "id": 7,
     "title": "Mic Up",
-    "description": "AUP Collab and QA Quizzers Sundae Set - Sept 20 2025",
+    "description": "AUP Collab and QA Quizzers Sundae Set",
     "category": "Arts & Literature",
     "questions": 8,
+    "date": "2025-09-20",
     "image": "/media/pictures/quizsets/micup.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DO05UVBElU_/?img_index=1"
   },      {
     "id": 8,
     "title": "Finance And Entrepreneurship Quiz",
-    "description": "AUSEC Collab and QA Quizzers Sundae Set - Sept 21 2025",
+    "description": "AUSEC Collab and QA Quizzers Sundae Set",
     "category": "Business",
     "questions": 7,
+    "date": "2025-09-21",
     "image": "/media/pictures/quizsets/finance.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DO3dnlDiP0T/?img_index=1"
   },
         {
     "id": 9,
     "title": "Technology Quiz",
-    "description": "CSAU and QA Collab Quizzers Sundae Set - Sept 29 2025",
+    "description": "CSAU and QA Collab Quizzers Sundae Set",
     "category": "Technology",
     "questions": 7,
+    "date": "2025-09-29",
     "image": "/media/pictures/quizsets/tech.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DPJ_F7aEr8A/?img_index=1"
   }
