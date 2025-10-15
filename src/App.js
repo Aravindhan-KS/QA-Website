@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Events from './pages/Events';
 import QuizSets from './pages/QuizSets';
 import Articles from './pages/Articles';
+import NewArticles from './pages/NewArticles';
 import Gallery from './pages/Gallery';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
@@ -27,6 +28,7 @@ function App() {
               <Route path="/events" element={<PageWrapper><Events /></PageWrapper>} />
               <Route path="/quiz-sets" element={<PageWrapper><QuizSets /></PageWrapper>} />
               <Route path="/articles" element={<PageWrapper><Articles /></PageWrapper>} />
+              <Route path="/new-articles" element={<PageWrapper><NewArticles /></PageWrapper>} />
               <Route path="/gallery" element={<PageWrapper><Gallery /></PageWrapper>} />
               <Route path="/team" element={<PageWrapper><Team /></PageWrapper>} />
               <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />

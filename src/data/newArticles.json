@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "The Story of Verghese Kurian",
+    "description": "How CEG played a role in the founding of Amul",
+    "author": "Jaison Jecinth Vincent",
+    "category": "Business",
+    "date": "11/02/2025",
+    "image": "/media/pictures/articles/amul.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DF7syjjSNRb/"
+  },
+  {
+    "id": 2,
+    "title": "The Vidamuyarchi that led to the Victory",
+    "description": "Ajith Kumar Racing's victory but what did he actually win?",
+    "author": "Visvam Srinivasan",
+    "category": "Sports",
+    "date": "13/02/2025",
+    "image": "/media/pictures/articles/ajith.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DGA_YdwSaTQ/"
+  },
+  {
+    "id": 3,
+    "title": "Tamil Nadu - Where chess legends are made",
+    "description": "From Viswanathan Anand to rising prodigies, Tamil Nadu continues to shape the world of chess!",
+    "author": "Mohamed Jasim J",
+    "category": "Sports",
+    "date": "20/02/2025",
+    "image": "/media/pictures/articles/chess.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DGSaeeWy6vo/"
+  },
+  {
+    "id": 4,
+    "title": "Who REALLY Discovered America ??",
+    "description": "Leif Erikson: The Viking who set foot in America 500 years before Columbus",
+    "author": "Aravindhan S",
+    "category": "History & Geography",
+    "date": "11/03/2025",
+    "image": "/media/pictures/articles/Viking.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DHEA0PIySzi/"
+  },
+  {
+    "id": 5,
+    "title": "The drug that fueled a brutal regime's civil war",
+    "description": "From exam halls to warzones, get to know about the mystery drug and political weapon",
+    "author": "Jaison Jecinth Vincent",
+    "category": "Current Affairs",
+    "date": "19/07/2025",
+    "image": "/media/pictures/articles/Captagon.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DMRwqXTSjYt/"
+  },
+  {
+    "id": 6,
+    "title": "Fanta-stic Origins",
+    "description": "The Nazi-era invention you've probably sipped",
+    "author": "Mohamed Jasim J",
+    "category": "History & Geography",
+    "date": "01/08/2025",
+    "image": "/media/pictures/articles/fanta.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DM0GrqVyahB/"
+  },
+  {
+    "id": 7,
+    "title": "From glitch to glam the Y2K Vibe",
+    "description": "​The Y2K phenomenon! We're talking the millennium bug panic, the unforgettable fashion, and its massive comeback.",
+    "author": "Sachin C K S",
+    "category": "Technology",
+    "date": "29/08/2025",
+    "image": "/media/pictures/articles/y2k.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DN7a9__kvZm/"
+  },
+  {
+    "id": 8,
+    "title": "The Instrument that plays itself",
+    "description": "A musical instrument that seems magical at first but is just science in disguise",
+    "author": "Suvi Sharon",
+    "category": "Science",
+    "date": "16/09/2025",
+    "image": "/media/pictures/articles/music.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DOqczrWCIAh/"
+  },
+  {
+    "id": 9,
+    "title": "How an English gardener saved a Japanese icon",
+    "description": "The origin story of a Japanese icon - The cherry blossom(Sakura)",
+    "author": "Kaviya",
+    "category": "History & Geography",
+    "date": "02/10/2025",
+    "image": "/media/pictures/articles/Japanese.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DPS-_62kgFp/"
+  }
+]

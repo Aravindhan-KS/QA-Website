@@ -30,6 +30,7 @@ const Footer = () => {
               <li><a href="/events" className="text-dark-text-secondary hover:text-accent-blue">Events</a></li>
               <li><a href="/quiz-sets" className="text-dark-text-secondary hover:text-accent-blue">Quiz Sets</a></li>
               {/*<li><a href="/articles" className="text-dark-text-secondary hover:text-accent-blue">Articles</a></li>*/}
+              <li><a href="/new-articles" className="text-dark-text-secondary hover:text-accent-blue">Articles</a></li>
               <li><a href="/gallery" className="text-dark-text-secondary hover:text-accent-blue">Gallery</a></li>
               <li><a href="/team" className="text-dark-text-secondary hover:text-accent-blue">Team</a></li>
               <li><a href="/contact" className="text-dark-text-secondary hover:text-accent-blue">Contact</a></li>

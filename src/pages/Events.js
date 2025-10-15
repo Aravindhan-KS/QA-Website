@@ -3,9 +3,14 @@ import EventCard from '../components/EventCard';
 import events from '../data/events.json';
 
 const Events = () => {
-  const sortedEvents = [...events].sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  );
+  // Sort events by date (most recent first)
+  const sortedEvents = [...events].sort((a, b) => {
+    const [dayA, monthA, yearA] = a.date.split('/');
+    const [dayB, monthB, yearB] = b.date.split('/');
+    const dateA = new Date(yearA, monthA - 1, dayA);
+    const dateB = new Date(yearB, monthB - 1, dayB);
+    return dateB - dateA;
+  });
 
   const upcomingEvents = sortedEvents.filter(
     (event) => event.eventStatus === "upcoming"
@@ -24,7 +29,7 @@ const Events = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-white mb-4">Events</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Our Products.
+            Challenge your knowledge, compete with the best, and be part of our quizzing legacy
           </p>
         </div>
 

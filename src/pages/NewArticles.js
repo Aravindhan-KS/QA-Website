@@ -1,9 +1,9 @@
 import React from 'react';
-import quizSets from '../data/quizSets.json';
+import newArticles from '../data/newArticles.json';
 
-const QuizSets = () => {
+const NewArticles = () => {
   // Category styles mapping
-  const categoryStyles = {
+ const categoryStyles = {
     'Technology': { bg: 'bg-purple-500', hoverBg: 'hover:bg-purple-500/90', shadow: 'hover:shadow-purple-500/50' },
     'General Knowledge': { bg: 'bg-blue-500', hoverBg: 'hover:bg-blue-500/90', shadow: 'hover:shadow-blue-500/50' },
     'Science': { bg: 'bg-green-500', hoverBg: 'hover:bg-green-500/90', shadow: 'hover:shadow-green-500/50' },
@@ -16,8 +16,8 @@ const QuizSets = () => {
     'default': { bg: 'bg-gray-500', hoverBg: 'hover:bg-gray-500/90', shadow: 'hover:shadow-gray-500/50' }
   };
 
-  // Sort quiz sets by date (most recent first)
-  const sortedQuizSets = [...quizSets].sort((a, b) => {
+  // Sort articles by date (most recent first)
+  const sortedArticles = [...newArticles].sort((a, b) => {
     const [dayA, monthA, yearA] = a.date.split('/');
     const [dayB, monthB, yearB] = b.date.split('/');
     const dateA = new Date(yearA, monthA - 1, dayA);
@@ -34,8 +34,8 @@ const QuizSets = () => {
     return date.toLocaleDateString('en-IN', options);
   };
 
-  const totalQuestions = quizSets.reduce((sum, set) => sum + set.questions, 0);
-  const categories = [...new Set(quizSets.map(set => set.category))].length;
+  const totalAuthors = [...new Set(newArticles.map(article => article.author))].length;
+  const categories = [...new Set(newArticles.map(article => article.category))].length;
 
   return (
     <div className="min-h-screen py-8 relative overflow-hidden">
@@ -46,9 +46,9 @@ const QuizSets = () => {
         
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">Quiz Sets</h1>
+          <h1 className="text-4xl font-bold text-white mb-4">Articles</h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Check out some of our quiz sets! Some from our Instagram quizzes and some used in events!
+            Explore our collection of articles! Educational content and unknown facts shared on our Instagram!
           </p>
         </div>
 
@@ -57,12 +57,12 @@ const QuizSets = () => {
         {/* Stats Banner */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div className="bg-white/10 backdrop-blur-lg rounded-xl border border-white/20 p-6 text-center shadow-lg">
-            <div className="text-3xl font-bold text-accent-blue mb-2">{quizSets.length}</div>
-            <div className="text-gray-300">Quiz Sets</div>
+            <div className="text-3xl font-bold text-accent-blue mb-2">{newArticles.length}</div>
+            <div className="text-gray-300">Articles</div>
           </div>
           <div className="bg-white/10 backdrop-blur-lg rounded-xl border border-white/20 p-6 text-center shadow-lg">
-            <div className="text-3xl font-bold text-purple-400 mb-2">{totalQuestions}</div>
-            <div className="text-gray-300">Total Questions</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">{totalAuthors}</div>
+            <div className="text-gray-300">Authors</div>
           </div>
           <div className="bg-white/10 backdrop-blur-lg rounded-xl border border-white/20 p-6 text-center shadow-lg">
             <div className="text-3xl font-bold text-accent-green mb-2">{categories}</div>
@@ -70,52 +70,52 @@ const QuizSets = () => {
           </div>
         </div>
 
-        {/* Quiz Sets Grid */}
+        {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {sortedQuizSets.map((quizSet) => {
-            const style = categoryStyles[quizSet.category] || categoryStyles['default'];
+          {sortedArticles.map((article) => {
+            const style = categoryStyles[article.category] || categoryStyles['default'];
             return (
               <div
-                key={quizSet.id}
+                key={article.id}
                 className={`bg-white/10 backdrop-blur-lg rounded-xl border border-white/20 overflow-hidden shadow-lg 
                            transform transition-all duration-300 hover:-translate-y-1 ${style.shadow}`}
               >
-                {/* Header with category color */}
+                {/* Header with category */}
                 <div className={`${style.bg} p-4`}>
-                  <span className="text-white font-medium">{quizSet.category}</span>
+                  <span className="text-white font-medium">{article.category}</span>
                 </div>
-                {/* Quiz Image */}
+                {/* Article Image */}
                 <div className="relative">
                   <img
-                    src={quizSet.image}
-                    alt={quizSet.title}
-                    className="w-full aspect-[4/5] object-cover"
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full aspect-[5/5] object-cover"
                   />
                 </div>
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-3">{quizSet.title}</h3>
-                  <p className="text-gray-300 mb-4">{quizSet.description}</p>
+                  <h3 className="text-xl font-semibold text-white mb-3">{article.title}</h3>
+                  <p className="text-gray-300 mb-4">{article.description}</p>
 
                   {/* Stats */}
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center text-sm text-gray-300">
                       <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                       </svg>
-                      {quizSet.questions} Questions
+                      {article.author}
                     </div>
                     <div className="flex items-center text-sm text-gray-300">
                       <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                       </svg>
-                      {formatDate(quizSet.date)}
+                      {formatDate(article.date)}
                     </div>
                   </div>
 
                   {/* Redirect Button */}
                   <a
-                    href={quizSet.downloadUrl}
+                    href={article.instagramUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`block w-full py-3 px-4 rounded-xl flex items-center justify-center space-x-2 transition-all duration-200 
@@ -124,7 +124,7 @@ const QuizSets = () => {
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
                     </svg>
-                    <span>Check it out</span>
+                    <span>Read on Instagram</span>
                   </a>
                 </div>
               </div>
@@ -136,4 +136,4 @@ const QuizSets = () => {
   );
 };
 
-export default QuizSets;
+export default NewArticles;
