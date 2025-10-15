@@ -6,7 +6,7 @@ const EventCard = ({ event }) => {
                     transform transition-all duration-300 hover:-translate-y-2 hover:border-accent-white hover:shadow-[0_0_20px_#FFD700]">
       <div className="relative">
         <img
-          src={event.poster || '/api/placeholder/400/500'}
+          src={event.poster || '/media/pictures/events/wip.png'}
           alt={event.title}
           className="w-full aspect-[4/5] object-cover"
         />

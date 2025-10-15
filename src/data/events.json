@@ -42,7 +42,7 @@
     {
     "id": 5,
     "title": "Icebreaker25's Quiz",
-    "description": "Tick-Tock-Tick-Tock...The ⏰'s ticking, mind's racing, and the fire of the competition is set ablaze.",
+    "description": "Tick-Tock-Tick-Tock...The Clock's ticking, mind's racing, and the fire of the competition is set ablaze.",
     "date": "07/10/2025",
     "time": "1:00 PM",
     "venue": "Red Building Room 75",
@@ -52,7 +52,7 @@
     {
     "id": 6,
     "title": "Arena Sports & Gaming Quiz",
-    "description": "Press X to Trivia 🧠Quizzers Anonymous presents a Sports and gaming quiz for Agni 2025",
+    "description": "Press X to Trivia Quizzers Anonymous presents a Sports and gaming quiz for Agni 2025",
     "date": "10/10/2025",
     "time": "10:30 AM",
     "venue": "Red Building Room 75",
@@ -62,11 +62,21 @@
     {
     "id": 7,
     "title": "Kollywood Quiz",
-    "description": "'arangam adhirum whistle uh parakum eehhh' when Quizzers Anonymous shows up with the much awaited 🎥 KOLLYWOOD QUIZ 🔥🔥",
+    "description": "'arangam adhirum whistle uh parakum eehhh' when Quizzers Anonymous shows up with the much awaited KOLLYWOOD QUIZ",
     "date": "11/10/2025",
     "time": "10:30 AM",
     "venue": "Red Building Room 75",
     "poster": "/media/pictures/events/kollywood.jpg",
     "eventStatus": "completed"
+  },
+    {
+    "id": 8,
+    "title": "Cuisine  Quiz",
+    "description": "LET HIM COOK - An Ultimate Food Quiz 👨‍🍳\nWhere taste meets trivia and flavor meets fun!",
+    "date": "25/10/2025",
+    "time": "09:30 AM",
+    "venue": "2nd Floor, Mini Auditorium, DECE",
+    "poster": "/media/pictures/events/cuisine.jpg",
+    "eventStatus": "upcoming"
   }
 ]
