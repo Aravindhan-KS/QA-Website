@@ -78,5 +78,15 @@
     "venue": "2nd Floor, Mini Auditorium, DECE",
     "poster": "/media/pictures/events/cuisine.jpg",
     "eventStatus": "upcoming"
+  },
+    {
+    "id": 9,
+    "title": "Three Dragons  Quiz",
+    "description": "Welcome to the Three Dragons Quiz, where cinema, music, and fandom collide in a showdown of brains, passion, and pop culture power! ",
+    "date": "25/10/2025",
+    "time": "09:30 AM",
+    "venue": "Turing Hall, DCSE",
+    "poster": "/media/pictures/events/3dragon.mp4",
+    "eventStatus": "upcoming"
   }
 ]

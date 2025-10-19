@@ -1,15 +1,81 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const EventCard = ({ event }) => {
+  const videoRef = useRef(null);
+
+  // Check if the media is a video based on file extension
+  const isVideo = (url) => {
+    if (!url) return false;
+    const videoExtensions = ['.mp4', '.webm', '.ogg', '.mov', '.avi'];
+    return videoExtensions.some(ext => url.toLowerCase().includes(ext));
+  };
+
+  const mediaUrl = event.poster || '/media/pictures/events/wip.png';
+  const isVideoContent = isVideo(mediaUrl);
+
+  const handleMouseEnter = () => {
+    if (videoRef.current && isVideoContent) {
+      videoRef.current.play()
+        .catch(() => {
+          // Handle autoplay restrictions
+          console.log('Autoplay prevented');
+        });
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (videoRef.current && isVideoContent) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
+
+  const handleClick = () => {
+    if (videoRef.current && isVideoContent) {
+      if (videoRef.current.paused) {
+        videoRef.current.play()
+          .catch(() => {});
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  };
+
   return (
     <div className="bg-white/10 backdrop-blur-lg rounded-xl border border-white/20 shadow-lg overflow-hidden 
                     transform transition-all duration-300 hover:-translate-y-2 hover:border-accent-white hover:shadow-[0_0_20px_#FFD700]">
       <div className="relative">
-        <img
-          src={event.poster || '/media/pictures/events/wip.png'}
-          alt={event.title}
-          className="w-full aspect-[4/5] object-cover"
-        />
+        {isVideoContent ? (
+          <video
+            ref={videoRef}
+            src={mediaUrl}
+            alt={event.title}
+            className="w-full aspect-[4/5] object-cover cursor-pointer"
+            controls={false}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            onClick={handleClick}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
+        ) : (
+          <img
+            src={mediaUrl}
+            alt={event.title}
+            className="w-full aspect-[4/5] object-cover"
+          />
+        )}
+
+        {/* Video Indicator */}
+        {isVideoContent && (
+          <div className="absolute bottom-4 left-4 bg-black/50 backdrop-blur-sm rounded-full p-2 opacity-80 hover:opacity-100 transition-opacity duration-300">
+            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+        )}
 
         {/* Date Badge */}
         <div className="absolute top-4 right-4 bg-white/20 text-white px-2 py-1 rounded text-sm backdrop-blur-sm">

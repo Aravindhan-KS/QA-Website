@@ -34,8 +34,8 @@ const NewArticles = () => {
     return date.toLocaleDateString('en-IN', options);
   };
 
-  const totalAuthors = [...new Set(newArticles.map(article => article.author))].length;
-  const categories = [...new Set(newArticles.map(article => article.category))].length;
+  const totalAuthors = new Set(newArticles.map(article => article.author)).size;
+  const categories = new Set(newArticles.map(article => article.category)).size;
 
   return (
     <div className="min-h-screen py-8 relative overflow-hidden">

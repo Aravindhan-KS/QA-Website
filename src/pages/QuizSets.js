@@ -35,7 +35,7 @@ const QuizSets = () => {
   };
 
   const totalQuestions = quizSets.reduce((sum, set) => sum + set.questions, 0);
-  const categories = [...new Set(quizSets.map(set => set.category))].length;
+  const categories = new Set(quizSets.map(set => set.category)).size;
 
   return (
     <div className="min-h-screen py-8 relative overflow-hidden">
