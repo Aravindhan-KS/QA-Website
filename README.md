@@ -6,7 +6,7 @@ The official website for Quizzers Anonymous, College of Engineering Guindy's pre
 
 For detailed instructions on how to add new content (events, articles, gallery images, quiz sets), please refer to our [Content Management Tutorial](CONTENT_MANAGEMENT.md).
 
-## 🚀 Features
+## Features
 
 - **Event Management**: Display upcoming and completed quiz events with details
 - **Team Showcase**: Meet our current team members and alumni network
@@ -17,7 +17,7 @@ For detailed instructions on how to add new content (events, articles, gallery i
 - **Modern UI**: Clean, dark-themed interface with smooth animations
 - **Contact Integration**: Multiple ways to get in touch with the club
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **React 18** - Modern JavaScript library for building user interfaces
 - **React Router DOM** - Client-side routing for single-page application
@@ -26,7 +26,7 @@ For detailed instructions on how to add new content (events, articles, gallery i
 - **Vercel Speed Insights** - Performance monitoring
 - **React Testing Library** - Component testing framework
 
-## 📦 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -53,7 +53,7 @@ For detailed instructions on how to add new content (events, articles, gallery i
 
 4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 🎨 Website Structure
+## Website Structure
 
 ### Main Pages
 
@@ -73,7 +73,7 @@ For detailed instructions on how to add new content (events, articles, gallery i
 - **GalleryImage**: Interactive image viewer with modal
 - **Footer**: Social media links and contact information
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the project
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -81,11 +81,11 @@ For detailed instructions on how to add new content (events, articles, gallery i
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 src/
@@ -99,4 +99,4 @@ src/
 └── App.js              # Main application component
 ```
 
-Built with ❤️ by Quizzers Anonymous Team
+Built with ♥️ by Quizzers Anonymous Team
