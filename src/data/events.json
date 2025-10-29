@@ -77,7 +77,7 @@
     "time": "09:30 AM",
     "venue": "2nd Floor, Mini Auditorium, DECE",
     "poster": "/media/pictures/events/cuisine.jpg",
-    "eventStatus": "upcoming"
+    "eventStatus": "completed"
   },
     {
     "id": 9,
@@ -87,7 +87,7 @@
     "time": "09:30 AM",
     "venue": "Turing Hall, DCSE",
     "poster": "/media/pictures/events/3dragon.mp4",
-    "eventStatus": "upcoming"
+    "eventStatus": "completed"
   },
     {
     "id": 10,
@@ -97,6 +97,6 @@
     "time": "09:30 AM",
     "venue": "IST 2nd Floor",
     "poster": "/media/pictures/events/animation.jpeg",
-    "eventStatus": "upcoming"
+    "eventStatus": "completed"
   }
 ]
