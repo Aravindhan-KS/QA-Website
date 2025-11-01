@@ -11,9 +11,11 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Quizzers Anonymous</title>
     <link rel="icon" type="image/png" href="%PUBLIC_URL%/logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Preload the Honk font (browser will pick correct subresource from Google) -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/honk/v1/Honk.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Honk&family=Nabla&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

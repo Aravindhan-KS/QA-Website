@@ -1,6 +1,6 @@
-import React from 'react';
-import InstagramPostEmbed from '../components/InstagramPostEmbed';
+import React, { Suspense } from 'react';
 import BouncingLogo from '../components/BouncingLogo';
+const InstagramPostEmbed = React.lazy(() => import('../components/InstagramPostEmbed'));
 
 const Home = () => {
   return (
@@ -79,6 +79,8 @@ const Home = () => {
               <img
                 src="/media/HomePage.jpg"
                 alt="Quiz event"
+                loading="lazy"
+                decoding="async"
                 className="rounded-xl shadow-lg w-full transform transition-transform duration-500 group-hover:scale-105"
               />
             </div>
@@ -104,15 +106,17 @@ const Home = () => {
             <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 shadow-lg animate-slideUp">
               <h3 className="text-xl font-semibold text-white mb-6 text-center">Latest Posts</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-                <div className="flex justify-center hover:scale-105 transition-transform duration-300">
-                  <InstagramPostEmbed url="https://www.instagram.com/p/DM-oLOizDzC/" />
-                </div>
-                <div className="flex justify-center hover:scale-105 transition-transform duration-300">
-                  <InstagramPostEmbed url="https://www.instagram.com/p/DMAe-fcSvCb/" />
-                </div>
-                <div className="flex justify-center hover:scale-105 transition-transform duration-300">
-                  <InstagramPostEmbed url="https://www.instagram.com/p/DMAdi9YynBn/" />
-                </div>
+                <Suspense fallback={<div className="py-8 text-center">Loading post...</div>}>
+                  <div className="flex justify-center hover:scale-105 transition-transform duration-300">
+                    <InstagramPostEmbed url="https://www.instagram.com/p/DM-oLOizDzC/" />
+                  </div>
+                  <div className="flex justify-center hover:scale-105 transition-transform duration-300">
+                    <InstagramPostEmbed url="https://www.instagram.com/p/DMAe-fcSvCb/" />
+                  </div>
+                  <div className="flex justify-center hover:scale-105 transition-transform duration-300">
+                    <InstagramPostEmbed url="https://www.instagram.com/p/DMAdi9YynBn/" />
+                  </div>
+                </Suspense>
               </div>
               <div className="text-center">
                 <a 
