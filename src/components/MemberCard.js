@@ -2,14 +2,16 @@ import React from 'react';
 
 const MemberCard = ({ member, role }) => {
   // Role-based hover styles
-  const roleHover =
-    role === "head"
-      ? "hover:border-accent-yellow hover:shadow-[0_0_20px_#FFD700]"
-      : role === "senior"
-      ? "hover:border-accent-blue hover:shadow-[0_0_20px_#3B82F6]"
-      : role === "junior"
-      ? "hover:border-accent-green hover:shadow-[0_0_20px_#10B981]"
-      : "hover:border-accent-yellow"; // fallback
+  let roleHover;
+  if (role === "head") {
+    roleHover = "hover:border-accent-yellow hover:shadow-[0_0_20px_#FFD700]";
+  } else if (role === "senior") {
+    roleHover = "hover:border-accent-blue hover:shadow-[0_0_20px_#3B82F6]";
+  } else if (role === "junior") {
+    roleHover = "hover:border-accent-green hover:shadow-[0_0_20px_#10B981]";
+  } else {
+    roleHover = "hover:border-accent-yellow"; // fallback
+  }
 
   return (
     <div

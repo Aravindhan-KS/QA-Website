@@ -1,8 +1,60 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import MemberCard from '../components/MemberCard';
-import teamData from '../data/team.json';
+
+const TEAM_API_BASE = (process.env.REACT_APP_TEAM_API_BASE || '').replace(/\/$/, '');
+const TEAM_API_URL = TEAM_API_BASE ? `${TEAM_API_BASE}/api/team` : '/api/team';
+
+const emptyRoster = {
+  heads: [],
+  seniorCoordinators: [],
+  juniorCoordinators: [],
+};
 
 const Team = () => {
+  const [teamData, setTeamData] = useState(emptyRoster);
+  const [status, setStatus] = useState({ loading: true, error: null });
+
+  useEffect(() => {
+    let isMounted = true;
+    const controller = new AbortController();
+
+    const fetchTeam = async () => {
+      try {
+        const response = await fetch(TEAM_API_URL, { signal: controller.signal });
+        if (!response.ok) {
+          throw new Error(`Failed to fetch team data: ${response.status}`);
+        }
+
+        const payload = await response.json();
+        if (!isMounted) {
+          return;
+        }
+
+        setTeamData({
+          heads: payload.heads || [],
+          seniorCoordinators: payload.seniorCoordinators || [],
+          juniorCoordinators: payload.juniorCoordinators || [],
+        });
+        setStatus({ loading: false, error: null });
+      } catch (error) {
+        if (!isMounted || error.name === 'AbortError') {
+          return;
+        }
+        console.error('[Team] unable to load roster', error);
+        setStatus({
+          loading: false,
+          error: 'Unable to load the team roster right now. Please refresh.',
+        });
+      }
+    };
+
+    fetchTeam();
+    return () => {
+      isMounted = false;
+      controller.abort();
+    };
+  }, []);
+
   const { heads, seniorCoordinators, juniorCoordinators } = teamData;
   const allMembers = [...heads, ...seniorCoordinators, ...juniorCoordinators];
 
@@ -21,7 +73,17 @@ const Team = () => {
           </p>
         </div>
 
+        {status.error && (
+          <div className="mb-10 rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-100">
+            {status.error}
+          </div>
+        )}
+
         <div className="border-t border-white/10 my-6"></div>
+
+        {status.loading && (
+          <div className="mb-10 text-center text-gray-400">Loading team roster...</div>
+        )}
 
         {/* Team Stats */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">

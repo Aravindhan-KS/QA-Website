@@ -260,6 +260,15 @@ public/
    - **Article images**: 400x250px recommended
 4. **File Size**: Keep under 1MB for optimal loading
 
+### Team Headshots (Vercel Blob)
+
+Team member portraits are no longer stored in `public/media`. Upload them to Vercel Blob and reference only the blob key inside `src/data/team.json`:
+
+1. Upload via CLI (example): `vercel blob put Heads/jaison.png ./local/path/jaison.png`
+2. Copy the key (`Heads/jaison.png`) into the `photoKey` field for that member.
+3. Do **not** commit public URLs or binary assets to the repo; the `/api/team` endpoint will sign and proxy the file automatically.
+4. If you add a new folder (e.g., `Leads/`), keep the path inside the key so the proxy can locate it.
+
 ### Adding Images
 
 1. **Navigate** to the appropriate folder in `public/media/pictures/`
