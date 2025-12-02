@@ -1,10 +1,13 @@
-const crypto = require('crypto');
-const { Readable } = require('stream');
+const crypto = require('node:crypto');
+const { Readable } = require('node:stream');
 
 const SIGNING_SECRET = process.env.TEAM_IMAGE_SIGNING_SECRET;
 const BLOB_BASE_URL = process.env.TEAM_IMAGE_BLOB_BASE_URL;
 const BLOB_READ_TOKEN = process.env.TEAM_IMAGE_BLOB_READ_TOKEN;
-const REFERER_HOST = (process.env.TEAM_IMAGE_REFERER || '').toLowerCase();
+const REFERER_HOSTS = (process.env.TEAM_IMAGE_REFERER || '')
+  .split(',')
+  .map((value) => value.trim().toLowerCase())
+  .filter(Boolean);
 
 class HttpError extends Error {
   constructor(status, message) {
@@ -151,9 +154,10 @@ module.exports = async function handler(req, res) {
     return res.status(403).json({ error: 'Invalid signature supplied.' });
   }
 
-  if (REFERER_HOST) {
+  if (REFERER_HOSTS.length > 0) {
     const refererHeader = (req.headers.referer || '').toLowerCase();
-    if (!refererHeader.includes(REFERER_HOST)) {
+    const isRefererAllowed = REFERER_HOSTS.some((host) => refererHeader.includes(host));
+    if (!isRefererAllowed) {
       return res.status(403).json({ error: 'Invalid referer.' });
     }
   }

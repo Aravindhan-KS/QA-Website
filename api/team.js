@@ -1,5 +1,5 @@
-const crypto = require('crypto');
-const path = require('path');
+const crypto = require('node:crypto');
+const path = require('node:path');
 
 const teamData = require(path.join(__dirname, '..', 'src', 'data', 'team.json'));
 
