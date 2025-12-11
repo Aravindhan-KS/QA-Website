@@ -79,21 +79,21 @@
       "designation": "Head of Design",
       "year": "3rd Year",
       "department": "Electronics & Communication Engineering"
-    }
-  ],
-  "seniorCoordinators": [
+    },
     {
       "id": 11,
-      "name": "Abhishek S",
-      "photoKey": "SCs/abhishek.png",
-      "designation": "Operations",
+      "name": "Aravindhan S",
+      "photoKey": "Heads/aravindhan.png",
+      "designation": "Tech",
       "year": "3rd Year",
       "department": "Computer Science Engineering"
-    },
+    }
+  ],
+  "associateHeads": [
     {
       "id": 12,
       "name": "Manesh Ram",
-      "photoKey": "SCs/manesh.png",
+      "photoKey": "AHs/manesh.png",
       "designation": "Operations",
       "year": "3rd Year",
       "department": "Computer Science Engineering"
@@ -101,13 +101,47 @@
     {
       "id": 13,
       "name": "Ragotma Ragavendar Nandagopal",
-      "photoKey": "SCs/ragotma.png",
+      "photoKey": "AHs/ragotma.png",
       "designation": "Operations",
       "year": "3rd Year",
       "department": "Computer Science Engineering"
     },
     {
       "id": 14,
+      "name": "Arunprasath M",
+      "photoKey": "AHs/arunprasath.png",
+      "designation": "Operations",
+      "year": "2nd Year",
+      "department": "Mechanical Engineering"
+    },
+    {
+      "id": 15,
+      "name": "Abhishek S",
+      "photoKey": "AHs/abhishek.png",
+      "designation": "Operations",
+      "year": "3rd Year",
+      "department": "Computer Science Engineering"
+    },   
+    {
+      "id": 16,
+      "name": "Srivishnu Rajkrishna",
+      "photoKey": "AHs/shrivishnu.png",
+      "designation": "Marketing",
+      "year": "2nd Year",
+      "department": "Computer Science Engineering"
+    },
+    {
+      "id": 17,
+      "name": "Roshon R",
+      "photoKey": "AHs/roshon.png",
+      "designation": "Design",
+      "year": "3rd Year",
+      "department": "Biomedical Engineering"
+    }
+  ],
+  "seniorCoordinators": [
+    {
+      "id": 18,
       "name": "Samyuktha Venkatasamy",
       "photoKey": "SCs/samyuktha.png",
       "designation": "Operations",
@@ -115,7 +149,7 @@
       "department": "Industrial Engineering"
     },
     {
-      "id": 15,
+      "id": 19,
       "name": "Jeffrey Samuel Raj P",
       "photoKey": "SCs/Jeffrey.png",
       "designation": "Marketing",
@@ -123,7 +157,7 @@
       "department": "Electronics & Communication Engineering"
     },
     {
-      "id": 16,
+      "id": 20,
       "name": "Parthasarathi N S",
       "photoKey": "SCs/parthasarathy.png",
       "designation": "Contents",
@@ -131,7 +165,7 @@
       "department": "Medical Physics"
     },
     {
-      "id": 17,
+      "id": 21,
       "name": "Suvi Sharon",
       "photoKey": "SCs/suvi.png",
       "designation": "Contents",
@@ -139,7 +173,7 @@
       "department": "Computer Science Engineering"
     },
     {
-      "id": 18,
+      "id": 22,
       "name": "Nagarajan S",
       "photoKey": "SCs/nagarajan.png",
       "designation": "Design",
@@ -147,47 +181,15 @@
       "department": "Mechanical Engineering"
     },
     {
-      "id": 19,
-      "name": "Roshon R",
-      "photoKey": "SCs/roshon.png",
-      "designation": "Design",
-      "year": "3rd Year",
-      "department": "Biomedical Engineering"
-    },
-    {
-      "id": 20,
+      "id": 23,
       "name": "A Mohammed Saalih",
       "photoKey": "SCs/saalih.png",
       "designation": "Design",
       "year": "3rd Year",
       "department": "Computer Science Engineering"
-    },
-    {
-      "id": 21,
-      "name": "Aravindhan S",
-      "photoKey": "SCs/aravindhan.png",
-      "designation": "Tech",
-      "year": "3rd Year",
-      "department": "Computer Science Engineering"
     }
   ],
   "juniorCoordinators": [
-    {
-      "id": 22,
-      "name": "Arunprasath M",
-      "photoKey": "JCs/arunprasath.png",
-      "designation": "Operations",
-      "year": "2nd Year",
-      "department": "Mechanical Engineering"
-    },
-    {
-      "id": 23,
-      "name": "Srivishnu Rajkrishna",
-      "photoKey": "JCs/shrivishnu.png",
-      "designation": "Marketing",
-      "year": "2nd Year",
-      "department": "Computer Science Engineering"
-    },
     {
       "id": 24,
       "name": "Sachin C K S",
@@ -198,14 +200,6 @@
     },
     {
       "id": 25,
-      "name": "Kaviya",
-      "photoKey": "JCs/kaviya.png",
-      "designation": "Design",
-      "year": "2nd Year",
-      "department": "Computer Science Engineering"
-    },
-    {
-      "id": 26,
       "name": "Ramkumar R",
       "photoKey": "JCs/ramkumar.png",
       "designation": "Design",
@@ -213,7 +207,7 @@
       "department": "Mechanical Engineering"
     },
     {
-      "id": 27,
+      "id": 26,
       "name": "Sujitha",
       "photoKey": "JCs/sujitha.png",
       "designation": "Design",
