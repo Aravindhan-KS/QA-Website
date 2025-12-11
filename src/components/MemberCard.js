@@ -5,6 +5,8 @@ const MemberCard = ({ member, role }) => {
   let roleHover;
   if (role === "head") {
     roleHover = "hover:border-accent-yellow hover:shadow-[0_0_20px_#FFD700]";
+  } else if (role === "associate") {
+    roleHover = "hover:border-rose-300 hover:shadow-[0_0_20px_#fda4af]";
   } else if (role === "senior") {
     roleHover = "hover:border-accent-blue hover:shadow-[0_0_20px_#3B82F6]";
   } else if (role === "junior") {
