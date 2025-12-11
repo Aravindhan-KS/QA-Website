@@ -65,7 +65,6 @@ module.exports = async function handler(req, res) {
 
   const body = {
     heads: teamData.heads.map(withSignedPhoto),
-    associateHeads: (teamData.associateHeads || []).map(withSignedPhoto),
     seniorCoordinators: teamData.seniorCoordinators.map(withSignedPhoto),
     juniorCoordinators: teamData.juniorCoordinators.map(withSignedPhoto),
     generatedAt: new Date().toISOString(),

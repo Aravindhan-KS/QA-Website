@@ -6,7 +6,6 @@ const TEAM_API_URL = TEAM_API_BASE ? `${TEAM_API_BASE}/api/team` : '/api/team';
 
 const emptyRoster = {
   heads: [],
-  associateHeads: [],
   seniorCoordinators: [],
   juniorCoordinators: [],
 };
@@ -33,7 +32,6 @@ const Team = () => {
 
         setTeamData({
           heads: payload.heads || [],
-          associateHeads: payload.associateHeads || [],
           seniorCoordinators: payload.seniorCoordinators || [],
           juniorCoordinators: payload.juniorCoordinators || [],
         });
@@ -57,8 +55,8 @@ const Team = () => {
     };
   }, []);
 
-  const { heads, associateHeads, seniorCoordinators, juniorCoordinators } = teamData;
-  const allMembers = [...heads, ...associateHeads, ...seniorCoordinators, ...juniorCoordinators];
+  const { heads, seniorCoordinators, juniorCoordinators } = teamData;
+  const allMembers = [...heads, ...seniorCoordinators, ...juniorCoordinators];
 
   return (
     <div className="min-h-screen relative overflow-hidden py-8">
@@ -88,14 +86,10 @@ const Team = () => {
         )}
 
         {/* Team Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
             <div className="text-3xl font-bold text-accent-yellow mb-2">{heads.length}</div>
             <div className="text-gray-300">Heads</div>
-          </div>
-          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
-            <div className="text-3xl font-bold text-rose-300 mb-2">{associateHeads.length}</div>
-            <div className="text-gray-300">Associate Heads</div>
           </div>
           <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-6 text-center">
             <div className="text-3xl font-bold text-accent-blue mb-2">{seniorCoordinators.length}</div>
@@ -124,24 +118,6 @@ const Team = () => {
         </div>
 
         <div className="border-t border-white/10 my-6"></div>
-
-        {/* Associate Heads Section */}
-        {associateHeads.length > 0 && (
-          <>
-            <div className="mb-16">
-              <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-white mb-4">Associate Heads</h2>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {associateHeads.map((member) => (
-                  <MemberCard key={member.id} member={member} role="associate" />
-                ))}
-              </div>
-            </div>
-
-            <div className="border-t border-white/10 my-6"></div>
-          </>
-        )}
 
         {/* Senior Coordinators Section */}
         <div className="mb-16">
