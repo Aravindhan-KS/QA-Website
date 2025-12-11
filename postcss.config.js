@@ -1,6 +1,1 @@
-module.exports = {
-  plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
-}
+module.exports = require('./config/postcss.config.js');
