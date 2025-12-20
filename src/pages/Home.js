@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import BouncingLogo from '../components/BouncingLogo';
+import Snowfall from "react-snowfall";
 const InstagramPostEmbed = React.lazy(() => import('../components/InstagramPostEmbed'));
 
 const Home = () => {
@@ -16,6 +17,11 @@ const Home = () => {
 
         {/* Bouncing Logo */}
         <BouncingLogo />
+        <Snowfall
+          color="rgba(255, 255, 255, 0.3)"
+          snowflakeCount={100}
+          style={{ position: 'absolute', width: '100%', height: '100%', zIndex: 10 }}
+        />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fadeIn z-20">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
