@@ -62,7 +62,7 @@
   {
     "id": 7,
     "title": "From glitch to glam the Y2K Vibe",
-    "description": "​The Y2K phenomenon! We're talking the millennium bug panic, the unforgettable fashion, and its massive comeback.",
+    "description": "We're talking the millennium bug panic, the unforgettable fashion, and its massive comeback.",
     "author": "Sachin C K S",
     "category": "Technology",
     "date": "29/08/2025",
@@ -88,5 +88,15 @@
     "date": "02/10/2025",
     "image": "/media/pictures/articles/Japanese.jpeg",
     "instagramUrl": "https://www.instagram.com/p/DPS-_62kgFp/"
+  },
+  {
+    "id": 10,
+    "title": "Superhero Who Unmasked the Cult of Ku Klux Klan",
+    "description": "How Superman uncovered the KKK's secrets using just journalistic skill",
+    "author": "Mohamed Jasim J",
+    "category": "History & Geography",
+    "date": "21/12/2025",
+    "image": "/media/pictures/articles/superman.jpeg",
+    "instagramUrl": "https://www.instagram.com/p/DSg2I5pEuXP/"
   }
 ]
