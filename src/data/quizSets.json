@@ -9,7 +9,7 @@
     "image": "/media/pictures/quizsets/superman.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DMYMyb7SlMQ/?img_index=1"
   },
-    {
+  {
     "id": 2,
     "title": "India VS England",
     "description": "Quizzers Sundae Set",
@@ -19,7 +19,7 @@
     "image": "/media/pictures/quizsets/india_v_england.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DMnZ4-fyIn1/?img_index=1"
   },
-    {
+  {
     "id": 3,
     "title": "The Ultimate Gen Z Test",
     "description": "Litclub AU and QA Collab Quizzers Sundae Set",
@@ -29,7 +29,7 @@
     "image": "/media/pictures/quizsets/genz.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DM4ZDZyy1Ex/?img_index=1"
   },
-    {
+  {
     "id": 4,
     "title": "Quiz on Stage",
     "description": "Theatron AU and QA Collab Quizzers Sundae Set",
@@ -39,7 +39,7 @@
     "image": "/media/pictures/quizsets/stage.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DNLJwL1SIqQ/?img_index=1"
   },
-      {
+  {
     "id": 5,
     "title": "Independence Day Set",
     "description": "Leo Club CEG and QACollab Quizzers Sundae Set",
@@ -49,7 +49,7 @@
     "image": "/media/pictures/quizsets/independence.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DNa80CkyS1n/?img_index=1"
   },
-      {
+  {
     "id": 6,
     "title": "Space Quiz",
     "description": "AstroClub AU and QA Collab Quizzers Sundae Set",
@@ -59,7 +59,7 @@
     "image": "/media/pictures/quizsets/space.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DNuebJUZFcl/?img_index=1"
   },
-      {
+  {
     "id": 7,
     "title": "Mic Up",
     "description": "AUP Collab and QA Quizzers Sundae Set",
@@ -68,7 +68,8 @@
     "date": "20/09/2025",
     "image": "/media/pictures/quizsets/micup.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DO05UVBElU_/?img_index=1"
-  },      {
+  },      
+  {
     "id": 8,
     "title": "Finance And Entrepreneurship Quiz",
     "description": "AUSEC Collab and QA Quizzers Sundae Set",
@@ -78,7 +79,7 @@
     "image": "/media/pictures/quizsets/finance.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DO3dnlDiP0T/?img_index=1"
   },
-        {
+  {
     "id": 9,
     "title": "Technology Quiz",
     "description": "CSAU and QA Collab Quizzers Sundae Set",
@@ -87,5 +88,15 @@
     "date": "29/09/2025",
     "image": "/media/pictures/quizsets/tech.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DPJ_F7aEr8A/?img_index=1"
+  },
+  {
+    "id": 10,
+    "title": "John Cena Quiz",
+    "description": "John Cena (WWE) Quizzers Sundae Set",
+    "category": "Sports",
+    "questions": 7,
+    "date": "21/12/2025",
+    "image": "/media/pictures/quizsets/john_cena.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DSht6amEv7t/?img_index=1"
   }
 ]
