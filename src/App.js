@@ -24,14 +24,14 @@ function App() {
         <Navbar />
           <main className="flex-grow">
             <Routes>
-              <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
-              <Route path="/events" element={<PageWrapper><Events /></PageWrapper>} />
-              <Route path="/quiz-sets" element={<PageWrapper><QuizSets /></PageWrapper>} />
-              <Route path="/articles" element={<PageWrapper><Articles /></PageWrapper>} />
-              <Route path="/new-articles" element={<PageWrapper><NewArticles /></PageWrapper>} />
-              <Route path="/gallery" element={<PageWrapper><Gallery /></PageWrapper>} />
-              <Route path="/team" element={<PageWrapper><Team /></PageWrapper>} />
-              <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
+              <Route path="/" element={<PageWrapper title="Home" description="Welcome to Quizzers Anonymous - The ultimate platform for quiz enthusiasts."><Home /></PageWrapper>} />
+              <Route path="/events" element={<PageWrapper title="Events" description="Join our upcoming quiz events and competitions."><Events /></PageWrapper>} />
+              <Route path="/quiz-sets" element={<PageWrapper title="Quiz Sets" description="Practice with our extensive collection of quiz sets and trivia."><QuizSets /></PageWrapper>} />
+              <Route path="/articles" element={<PageWrapper title="Articles" description="Read insightful articles and blog posts about quizzing and general knowledge."><Articles /></PageWrapper>} />
+              <Route path="/new-articles" element={<PageWrapper title="New Articles" description="Check out our latest articles and updates."><NewArticles /></PageWrapper>} />
+              <Route path="/gallery" element={<PageWrapper title="Gallery" description="Browse photos from our past events and community gatherings."><Gallery /></PageWrapper>} />
+              <Route path="/team" element={<PageWrapper title="Our Team" description="Meet the dedicated team behind Quizzers Anonymous."><Team /></PageWrapper>} />
+              <Route path="/contact" element={<PageWrapper title="Contact Us" description="Get in touch with Quizzers Anonymous for queries and collaborations."><Contact /></PageWrapper>} />
             </Routes>
           </main>
         <Footer />
