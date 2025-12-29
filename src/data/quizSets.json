@@ -98,5 +98,15 @@
     "date": "21/12/2025",
     "image": "/media/pictures/quizsets/john_cena.jpeg",
     "downloadUrl": "https://www.instagram.com/p/DSht6amEv7t/?img_index=1"
+  },
+  {
+    "id": 11,
+    "title": "Christmas Quiz",
+    "description": "Christmas Quizzers Sundae Set",
+    "category": "General Knowledge",
+    "questions": 6,
+    "date": "28/12/2025",
+    "image": "/media/pictures/quizsets/christmas.jpeg",
+    "downloadUrl": "https://www.instagram.com/p/DSz1q99Eg3S/?img_index=1"
   }
 ]
